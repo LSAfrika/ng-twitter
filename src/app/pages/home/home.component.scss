@@ -1,6 +1,15 @@
-.homecontainer{
+.leftsidecontainer{
+
+    @apply hidden w-full sm:max-w-[60px] min-h-screen bg-emerald-600 sm:flex justify-start items-center
+
+}
+.rightsidecontainer{
+
+}
+
+.centralcontainer{
     @apply  min-h-screen
-     overflow-scroll w-full px-2
+     overflow-scroll w-full px-2 sm:w-[calc(100%-60px)] ml-auto fixed top-0 right-0
 }
 
 .showmoretweets{

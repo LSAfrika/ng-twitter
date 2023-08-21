@@ -16,7 +16,8 @@ import { SidenavComponent } from '../../components/sidenav/sidenav.component';
     CommonModule
   ],exports:[
     NavComponent,
-    TweetComponent
+    SidenavComponent,
+    TweetComponent,
   ]
 })
 export class SharedModule { }
