@@ -32,14 +32,14 @@ top-0 left-0 z-10 flex justify-start items-center flex-col ;
 
 }
 .tweetbody{
-    @apply w-[calc(100%-65px)] min-h-[calc(100%-60px)] max-h-[calc(100%-60px)]
-     bg-orange-500  z-20 absolute right-0 overflow-auto px-1
+    @apply w-[calc(100%-65px)] min-h-[calc(100%-70px)] max-h-[calc(100%-70px)]
+     bg-orange-500  z-20 absolute right-0  overflow-hidden px-1
     ;
 }
 .tweetstats{
-    @apply w-[calc(100%-65px)] min-h-[30px] bg-cyan-700 absolute bottom-0 right-0
+    @apply w-[calc(100%-65px)] min-h-[40px] h-fit bg-cyan-700 absolute bottom-0 right-0 box-border pt-[5px]
     flex justify-between items-center px-[10px];
     .statssection{
-        @apply w-fit flex justify-center items-center
+        @apply w-fit flex justify-center items-center cursor-pointer
     }
 }
