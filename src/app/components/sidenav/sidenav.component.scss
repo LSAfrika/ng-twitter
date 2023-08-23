@@ -1,5 +1,9 @@
 .main{
-  @apply min-w-[70px] md:min-w-[120px] w-full flex md:items-end flex-col justify-start items-center pt-2 min-h-screen bg-slate-100 border-r-2 border-slate-300
+  @apply min-w-[70px]
+   md:min-w-[120px]
+   lg:min-w-[90px]
+  w-full flex md:items-end flex-col
+   justify-start items-center pt-2 min-h-screen bg-slate-100 border-r-2 border-slate-300
 }
 
 .logo{
