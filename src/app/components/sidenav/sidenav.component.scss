@@ -1,0 +1,28 @@
+.main{
+  @apply min-w-[70px] md:min-w-[120px] w-full flex md:items-end flex-col justify-start items-center pt-2 min-h-screen bg-slate-100 border-r-2 border-slate-300
+}
+
+.logo{
+  @apply w-[40px] h-[40px] cursor-pointer
+}
+
+.iconscolumn{
+@apply pt-5 min-h-[calc(100vh-50px)]  flex flex-col justify-start items-center gap-2;
+
+.svgeffect{
+  @apply w-[45px] h-[45px] rounded-full  flex items-center justify-center hover:bg-slate-400/40 cursor-pointer
+}
+
+  svg{
+    @apply w-[25px] h-[25px]
+  }
+
+  .tweet{
+    @apply w-[50px] h-[50px] rounded-full flex items-center justify-center bg-[#1d9bf0];
+    color:rgb(29, 155, 240) ;
+  }
+
+  .user{
+    @apply w-[50px] h-[50px] rounded-full flex items-center justify-center bg-pink-600 mt-auto mb-2
+  }
+}

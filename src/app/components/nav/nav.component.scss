@@ -4,19 +4,21 @@
 
 .divider{
     @apply w-full   h-[56px] flex justify-center bg-red-500 items-center  gap-20 font-semibold sticky top-0
-    
+
 }
 .dividerborderbottom{
     @apply border-b-2 border-black/20
 }
-
+.pagetitle{
+  @apply hidden sm:flex font-semibold text-2xl mr-auto pl-2
+}
 
 .avatar{
-    @apply w-[30px] h-[30px] rounded-full bg-pink-600 overflow-hidden bg-cover ml-3 mr-auto
+    @apply w-[30px] h-[30px] rounded-full bg-pink-600 overflow-hidden bg-cover ml-3 mr-auto sm:hidden
 }
 
 .logo{
-    @apply w-[40px] h-[40px] rounded-full bg-teal-600 overflow-hidden bg-cover  absolute left-[50%]
+    @apply w-[40px] h-[40px] rounded-full bg-teal-600 overflow-hidden bg-cover  absolute left-[50%] sm:hidden
 }
 .cursor{
     @apply cursor-pointer

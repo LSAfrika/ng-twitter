@@ -1,0 +1,33 @@
+.body{
+  @apply w-full flex justify-start
+}
+
+.avatar{
+  @apply min-w-[50px]  min-h-full p-2 ;
+  .user{
+    @apply w-[40px] mx-auto h-[40px] rounded-full bg-blue-500
+  }
+}
+
+.tweetsection{
+  @apply flex-grow gap-2 p-2 box-border  flex flex-col justify-start items-center;
+  .texttweet{
+    @apply w-full min-h-[70px] text-slate-800 outline-none  pl-2 text-lg
+  }
+
+  .tweetaddon{
+    @apply w-full  min-h-[40px]  flex justify-start items-center px-2;
+    .icons{
+      @apply flex justify-evenly max-w-[60%] min-h-[inherit] items-center gap-3;
+      svg{
+        @apply cursor-pointer
+      }
+
+    }
+    .posttweet{
+@apply min-w-[70px] p-1 px-2 rounded-full bg-[#1d9bf0] text-white font-light ml-auto
+    }
+
+
+  }
+}

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavComponent } from '../../components/nav/nav.component';
 import { TweetComponent } from '../../components/tweet/tweet.component';
 import { SidenavComponent } from '../../components/sidenav/sidenav.component';
+import { SendtweetComponent } from '../../components/sendtweet/sendtweet.component';
 
 
 
@@ -10,7 +11,8 @@ import { SidenavComponent } from '../../components/sidenav/sidenav.component';
   declarations: [
     NavComponent,
     TweetComponent,
-    SidenavComponent
+    SidenavComponent,
+    SendtweetComponent
   ],
   imports: [
     CommonModule
@@ -18,6 +20,7 @@ import { SidenavComponent } from '../../components/sidenav/sidenav.component';
     NavComponent,
     SidenavComponent,
     TweetComponent,
+    SendtweetComponent
   ]
 })
 export class SharedModule { }

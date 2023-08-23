@@ -1,17 +1,32 @@
 .leftsidecontainer{
 
-    @apply hidden w-full sm:max-w-[60px] min-h-screen bg-emerald-600 sm:flex justify-start items-center
+    @apply hidden w-full sm:max-w-[70px] min-h-screen bg-emerald-600 sm:flex justify-start items-center md:min-w-[120px]
 
 }
 .rightsidecontainer{
+  // @apply hidden w-full sm:max-w-[60px] min-h-screen bg-emerald-600 sm:flex justify-start items-center
 
 }
 
 .centralcontainer{
-    @apply  min-h-screen
-     overflow-scroll w-full px-2 sm:w-[calc(100%-60px)] ml-auto fixed top-0 right-0
+  @apply flex flex-col justify-start items-center sm:flex-grow min-h-screen w-full overflow-scroll max-h-screen
 }
 
+.main{
+    @apply  min-h-screen
+     overflow-scroll min-w-full px-1 sm:w-[calc(100%-60px)] ml-auto fixed top-0 right-0 flex flex-col justify-start items-center
+     sm:flex-row sm:items-start
+}
+app-nav{
+  @apply w-full sticky top-0 z-50
+}
+
+app-tweet{
+  @apply w-full sm:max-w-full max-w-[400px] my-2
+}
+app-sendtweet{
+  @apply hidden sm:flex min-h-fit h-fit w-full border-b-2 border-slate-500/30
+}
 .showmoretweets{
     @apply w-full font-light text-[#1d9bf0] border-b-2 border-black/20 flex justify-center items-center min-h-[50px]
 }

@@ -1,5 +1,5 @@
 .tweetcontainer{
-    @apply w-full max-w-[400px] relative min-h-[300px] bg-green-500
+    @apply w-full  p-2 relative min-h-[300px] sm:min-h-[350px] bg-green-500
 }
 
 .avatrsection{
@@ -12,7 +12,7 @@ top-0 left-0 z-10 flex justify-start items-center flex-col ;
 
 }
 .biosection{
-    @apply w-[calc(100%-65px)]  min-h-[30px] bg-cyan-700 
+    @apply w-[calc(100%-65px)]  min-h-[30px] bg-cyan-700
     flex justify-start items-center ml-auto
 
     ;

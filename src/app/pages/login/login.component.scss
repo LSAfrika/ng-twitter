@@ -1,15 +1,15 @@
 .loginwrapper{
-    @apply w-full h-screen flex flex-col justify-start items-center pt-7 px-12 md:px-4 bg-slate-50 md:flex-row flex-wrap;
+    @apply w-full h-screen flex  flex-col justify-start items-center pt-7 px-12 md:px-4 bg-slate-50 md:flex-row md:flex-wrap;
 
 }
 
 .textholder{
     @apply w-full  h-screen flex flex-col justify-start items-start  md:max-w-[450px] flex-wrap lg:min-w-[600px] lg:pt-8 ;
-  
+
 }
 .logo{
     @apply w-[45px] h-[57px] block mr-auto sm:w-[100px] sm:h-[100px] md:w-[250px] md:h-[250px]
-    lg:min-w-[350px] lg:min-h-[350px] lg:mx-auto  
+    lg:min-w-[350px] lg:min-h-[350px] lg:mx-auto
 }
 
 .title{
@@ -55,7 +55,7 @@
 
     @apply w-fit mt-5 sm:w-full  flex flex-col justify-center items-start lg:items-start  lg:mt-20;
     span{
-        @apply text-lg font-semibold mb-3 
+        @apply text-lg font-semibold mb-3
     }
     button{
         @apply text-[#1d9bf0] hover:bg-blue-100 sm:mx-auto lg:ml-0
