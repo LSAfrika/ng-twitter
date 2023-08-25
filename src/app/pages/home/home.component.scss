@@ -12,25 +12,27 @@
 }
 
 .centralcontainer{
-  @apply flex flex-col justify-start items-center sm:flex-grow min-h-screen w-full overflow-scroll max-h-screen
+  @apply flex flex-col justify-start items-center sm:flex-grow min-h-screen  overflow-scroll max-h-screen w-full
   sm:max-w-[650px] mr-auto sm:border-r-2 sm:border-slate-500
   lg:min-w-[700px] 2xl:mr-0
 }
 
 .main{
     @apply  min-h-screen
-     overflow-scroll min-w-full px-1 sm:w-[calc(100%-60px)] ml-auto fixed top-0 right-0 flex flex-col justify-start items-center
-     sm:flex-row sm:items-start
+     overflow-scroll min-w-full px-1
+     sm:min-w-[calc(100vw-60px)]
+     xl:min-w-[calc(100vw-250px)] ml-auto fixed top-0 right-0 flex flex-col justify-start items-center
+     sm:flex-row sm:items-start bg-purple-500
 }
 app-nav{
   @apply w-full sticky top-0 z-50
 }
 
 app-tweet{
-  @apply w-full sm:max-w-[650px] max-w-[400px] my-2 mr-auto lg:ml-auto
+  @apply w-full sm:max-w-[650px] max-w-[400px] my-2 sm:mr-auto lg:ml-auto
 }
 app-sendtweet{
-  @apply hidden sm:flex min-h-fit h-fit w-full border-b-2 border-slate-500/30
+  @apply hidden sm:flex min-h-fit h-fit w-full border-b-2 border-slate-500/30 bg-red-500
 }
 .showmoretweets{
     @apply w-full font-light text-[#1d9bf0] border-b-2 border-black/20 flex justify-center items-center min-h-[50px]

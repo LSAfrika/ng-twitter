@@ -15,7 +15,7 @@ import { SendtweetComponent } from '../../components/sendtweet/sendtweet.compone
     SendtweetComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],exports:[
     NavComponent,
     SidenavComponent,
