@@ -4,6 +4,7 @@ import { NavComponent } from '../../components/nav/nav.component';
 import { TweetComponent } from '../../components/tweet/tweet.component';
 import { SidenavComponent } from '../../components/sidenav/sidenav.component';
 import { SendtweetComponent } from '../../components/sendtweet/sendtweet.component';
+import { MobilenavComponent } from '../../components/mobilenav/mobilenav.component';
 
 
 
@@ -12,7 +13,8 @@ import { SendtweetComponent } from '../../components/sendtweet/sendtweet.compone
     NavComponent,
     TweetComponent,
     SidenavComponent,
-    SendtweetComponent
+    SendtweetComponent,
+    MobilenavComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { SendtweetComponent } from '../../components/sendtweet/sendtweet.compone
     NavComponent,
     SidenavComponent,
     TweetComponent,
-    SendtweetComponent
+    SendtweetComponent,
+    MobilenavComponent
   ]
 })
 export class SharedModule { }
