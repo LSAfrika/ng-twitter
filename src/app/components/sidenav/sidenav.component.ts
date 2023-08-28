@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, HostListener } from '@angular/core';
+import { UiService } from 'src/app/service/ui.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,12 +8,22 @@ import { Router } from '@angular/router';
 })
 export class SidenavComponent {
 
+  public getScreenWidth: number=0;
+  public getScreenHeight: number=0;
+  
 
-  constructor(private router:Router){}
-
-  profile(){
-    this.router.navigateByUrl('/profile')
-    console.log('should navigate to profile');
-
+  constructor(public UIS:UiService){
+    this.getScreenWidth=window.innerWidth
+    this.getScreenHeight=window.innerHeight
+    console.log('current width: ',this.getScreenWidth);
+    
   }
+
+    
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.getScreenWidth = window.innerWidth;
+    this.getScreenHeight = window.innerHeight;
+  }
+
 }

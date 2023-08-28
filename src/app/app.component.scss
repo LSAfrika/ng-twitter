@@ -8,20 +8,21 @@
   @apply sm:min-w-[60px]
          md:min-w-[120px]
          lg:min-w-[100px]
-         xl:min-w-[250px]
+         xl:min-w-[300px]
          sm:flex
          hidden
          bg-blue-500
          min-h-screen
-
-
+        
+  
+max-h-screen
          z-[100]
 }
 
-app-sidenav{
-
+.popoveroverlay{
+@apply fixed top-0 z-[100] bg-black/0 min-w-full min-h-screen
 }
 
 .body{
-  @apply flex-grow  min-h-screen bg-cyan-500
+  @apply flex-grow  min-h-screen max-h-screen bg-cyan-500 xl:max-w-[calc(100vw-300px)] ml-auto overflow-x-clip relative
 }

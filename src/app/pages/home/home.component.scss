@@ -18,11 +18,12 @@
 }
 
 .main{
-    @apply  min-h-screen
+    @apply  min-h-screen relative
      overflow-scroll min-w-full px-1
      sm:min-w-[calc(100vw-60px)]
-     xl:min-w-[calc(100vw-250px)] ml-auto fixed top-0 right-0 flex flex-col justify-start items-center
+     xl:max-w-[calc(100vw-250px)] ml-auto  top-0 right-0 flex flex-col justify-start items-center
      sm:flex-row sm:items-start bg-purple-500
+     overflow-y-auto
 }
 app-nav{
   @apply w-full sticky top-0 z-50

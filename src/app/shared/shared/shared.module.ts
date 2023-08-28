@@ -5,7 +5,7 @@ import { TweetComponent } from '../../components/tweet/tweet.component';
 import { SidenavComponent } from '../../components/sidenav/sidenav.component';
 import { SendtweetComponent } from '../../components/sendtweet/sendtweet.component';
 import { MobilenavComponent } from '../../components/mobilenav/mobilenav.component';
-
+import { MorepopoverComponent } from '../../components/morepopover/morepopover.component';
 
 
 @NgModule({
@@ -14,7 +14,8 @@ import { MobilenavComponent } from '../../components/mobilenav/mobilenav.compone
     TweetComponent,
     SidenavComponent,
     SendtweetComponent,
-    MobilenavComponent
+    MobilenavComponent,MorepopoverComponent
+
   ],
   imports: [
     CommonModule,
@@ -23,7 +24,8 @@ import { MobilenavComponent } from '../../components/mobilenav/mobilenav.compone
     SidenavComponent,
     TweetComponent,
     SendtweetComponent,
-    MobilenavComponent
+    MobilenavComponent,MorepopoverComponent
+
   ]
 })
 export class SharedModule { }
