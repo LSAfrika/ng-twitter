@@ -11,6 +11,9 @@ export class UiService {
 selectednavigation=0
 
 public popover$=new BehaviorSubject(false)
+public dropdowncreator$=new BehaviorSubject(false)
+public dropdownprofessional$=new BehaviorSubject(false)
+public dropdownsettings$=new BehaviorSubject(false)
 constructor(private router:Router){}
 
 switchnav(input:number,route:string){

@@ -1,14 +1,18 @@
 .container{
     @apply absolute bottom-0 z-[100] bg-white rounded-lg shadow-md shadow-black/50
-     min-w-[300px] min-h-[380px] h-fit max-h-[560px]
+     min-w-[300px] min-h-[380px] h-fit max-h-[500px]
 overflow-y-auto     left-[20%] px-[10px]
 }
 .list{
     @apply w-full flex flex-col justify-start items-center gap-5 pt-5 ;
     .innerlist{
-        @apply flex  justify-start items-center text-lg gap-3 font-semibold  w-full;
+        @apply flex  justify-start items-center text-lg gap-2 font-semibold  w-full flex-wrap;
         .separator{
             @apply ml-auto
+        }
+
+        .dropdown{
+            @apply min-w-full min-h-[50px] bg-teal-600
         }
     }
     }
