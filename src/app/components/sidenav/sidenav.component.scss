@@ -12,7 +12,7 @@
 }
 
 .iconscolumn{
-@apply pt-5 min-h-[calc(100vh-50px)]  flex flex-col justify-start items-center gap-2 xl:min-w-full xl:items-start;
+@apply pt-3 min-h-[calc(100vh-50px)]  flex flex-col justify-start items-center gap-1 xl:min-w-full xl:items-start;
 
 .svgeffect{
   @apply w-[45px] h-[45px] xl:min-w-[150px] xl:w-fit rounded-full
