@@ -9,14 +9,18 @@ export class UiService {
 
 
 selectednavigation=0
-
+pagetitle='home'
 disabled=true
 public popover$=new BehaviorSubject(false)
 public dropdowncreator$=new BehaviorSubject(false)
 public dropdownprofessional$=new BehaviorSubject(false)
 public dropdownsettings$=new BehaviorSubject(false)
+public activenavmenu=0
+  currentpage: string='home';
+
+
 constructor(private router:Router){}
-public popoverobs$=this.popover$.asObservable()
+
 switchnav(input:number,route:string){
   this.selectednavigation=input
   this.router.navigateByUrl(`${route}`)
@@ -54,4 +58,18 @@ enter(){
 
 }
 
+activemenuselect(active:number){
+  this.activenavmenu=active
+
+}
+
+
+
+acvtivepage(page:string){
+  this.currentpage=page
+}
+
+selectedmenunavigationmethod(select:number){
+  this.selectednavigation=select
+}
 }

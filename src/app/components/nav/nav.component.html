@@ -1,18 +1,29 @@
 
 <div class="nav">
 
-    <div class="divider">
+    <div class="divider" [ngClass]="{bottom:UIS.currentpage=='dataSnapshot.exportVal();'}">
         <div class="avatar"></div>
-        <div class="logo">
-          <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-16y2uox r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+        <div *ngIf="UIS.currentpage=='home'" class="logo">
+          <svg  viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-16y2uox r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
         </div>
-        <div class="pagetitle">Home</div>
+        <div class="pagetitle">{{UIS.pagetitle}}</div>
     </div>
-    <div class="divider dividerborderbottom">
-        <div class="foryou cursor">
+    <div *ngIf="UIS.currentpage=='home'"  class="divider dividerborderbottom">
+        <div class="dividersub cursor" (click)="UIS.activemenuselect(0)" >
+          <div>
+
             For you
+          </div>
+            <div [ngClass]="{active:UIS.activenavmenu==0}"></div>
         </div>
-        <div class="following cursor">Following</div>
+        <div class="dividersub cursor" (click)="UIS.activemenuselect(1)">
+          <div>
+
+            Following
+          </div>
+          <div [ngClass]="{active:UIS.activenavmenu==1}"></div>
+
+        </div>
 
 
     </div>

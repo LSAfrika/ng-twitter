@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UiService } from 'src/app/service/ui.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  public UIS=inject(UiService)
+constructor(){
+  this.UIS.acvtivepage('home')
+  this.UIS.selectedmenunavigationmethod(0)
+
+}
+
 
 }

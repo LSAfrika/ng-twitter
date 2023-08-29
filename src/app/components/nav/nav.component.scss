@@ -23,6 +23,14 @@
 .cursor{
     @apply cursor-pointer
 }
-.foryou{
 
+.dividersub{
+  @apply flex flex-col justify-start items-center
+}
+
+.active{
+  @apply min-w-[70px] min-h-[5px] rounded-full bg-[#1d9bf0]
+}
+.bottom{
+@apply shadow-sm shadow-black/30
 }

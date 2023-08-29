@@ -1,3 +1,4 @@
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +12,7 @@ import { ExploreComponent } from './explore.component';
   ],
   imports: [
     CommonModule,
-    ExploreRoutingModule
+    ExploreRoutingModule,SharedModule
   ]
 })
 export class ExploreModule { }
