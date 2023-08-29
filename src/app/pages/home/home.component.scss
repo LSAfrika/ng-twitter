@@ -11,18 +11,28 @@
       min-w-full px-1
      sm:min-w-[calc(100vw-60px)]
      xl:max-w-[calc(100vw-300px)] xl:min-w-fit ml-auto  top-0 right-0 flex flex-col justify-start items-center
-     sm:flex-row sm:items-start bg-purple-500
-     overflow-y-scroll
+     sm:flex-row sm:items-start bg-purple-500/0 scrollbar-thin 2xl:min-w-full
+     overflow-y-scroll 2xl:mr-auto
 }
 .rightsidecontainer{
-    @apply hidden lg:w-full  min-h-screen bg-emerald-600 sm:flex justify-start items-center max-w-[500px] 2xl:mr-auto lg:min-w-[250px] 
+    @apply hidden
+    lg:w-full
+    min-h-screen
+  bg-emerald-600/30
+    sm:flex
+    justify-start
+    items-center
+    max-w-[500px]
+    lg:min-w-[250px]
+    2xl:mr-auto
+    2xl:min-w-[350px]
 
 }
 
 .centralcontainer{
-  @apply flex flex-col justify-start items-center sm:flex-grow min-h-screen  overflow-y-scroll max-h-screen w-full
+  @apply flex flex-col justify-start items-center sm:flex-grow min-h-screen  overflow-y-scroll max-h-screen w-full scrollbar-thin
   sm:max-w-[650px] mr-auto sm:border-r-2 sm:border-slate-500
-  lg:max-w-[650px] xl:mr-0 
+  lg:max-w-[650px] xl:mr-0 2xl:min-w-[600px]
 }
 
 

@@ -1,7 +1,7 @@
 
 #app{
-    @apply min-w-full min-h-screen flex justify-start items-start ;
-    // bg-teal-500
+    @apply min-w-full min-h-screen flex justify-start items-start relative
+     bg-teal-500
 }
 
 .nav{
@@ -25,5 +25,10 @@ max-h-screen
 }
 
 .body{
-  @apply flex-grow  min-h-screen max-h-screen bg-cyan-500 xl:max-w-[calc(100vw-300px)] ml-auto overflow-x-clip relative
+  @apply flex-grow  min-h-screen max-h-screen
+   bg-red-500 xl:max-w-[calc(100vw-300px)] ml-auto overflow-x-clip relative
+   2xl:max-w-[1000px]
+   2xl:mr-auto
+2xl:ml-0
+   z-[100]
 }
