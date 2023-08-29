@@ -3,16 +3,18 @@
    md:min-w-[120px]
    lg:min-w-[90px]
    xl:min-w-[300px]
+   2xl:min-w-[400px]
   w-full flex md:items-end flex-col
    justify-start items-center pt-2 min-h-screen bg-slate-100 border-r-2 border-slate-300
 }
 
 .logo{
-  @apply w-[40px] h-[40px] cursor-pointer xl:mr-auto pl-2
+  @apply w-[40px] h-[40px] cursor-pointer xl:mr-auto pl-2 2xl:mr-[55%]
 }
 
 .iconscolumn{
-@apply pt-3 min-h-[calc(100vh-50px)]  flex flex-col justify-start items-center gap-1 xl:min-w-full xl:items-start;
+@apply pt-3 min-h-[calc(100vh-50px)]  flex flex-col justify-start items-center gap-1
+ xl:min-w-full xl:items-start  2xl:min-w-[60%];
 
 .svgeffect{
   @apply w-[45px] h-[45px] xl:min-w-[150px] xl:w-fit rounded-full
@@ -37,7 +39,7 @@
       @apply w-[40px] h-[40px] bg-blue-600 rounded-full bg-cover overflow-hidden justify-center items-center flex
     }
     .username{
-      @apply flex flex-col justify-start items-center flex-grow 
+      @apply flex flex-col justify-start items-center flex-grow
     }
 
   }

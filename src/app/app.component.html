@@ -1,7 +1,7 @@
 <div id="app">
-  
+
   <div class="nav">
-    <div class="popoveroverlay" (click)="UIS.disablepopover()" *ngIf="(UIS.popover$|async) ==true"></div>
+    <div class="popoveroverlay" (mouseenter)="UIS.enter()" (mouseleave)="UIS.leave()" (click)="UIS.disablepopover()" *ngIf="(UIS.popover$|async) ==true"></div>
     <app-sidenav></app-sidenav>
   </div>
 
