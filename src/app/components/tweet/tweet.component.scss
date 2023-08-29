@@ -1,9 +1,9 @@
 .tweetcontainer{
-    @apply w-full  p-2 relative min-h-[300px] sm:min-h-[350px] bg-green-500
+    @apply w-full   relative min-h-[300px] sm:min-h-[350px]
 }
 
 .avatrsection{
-@apply absolute min-w-[65px] bg-pink-500 min-h-full
+@apply absolute min-w-[65px]
 top-0 left-0 z-10 flex justify-start items-center flex-col ;
 .avatar{
     @apply w-[50px] h-[50px] bg-blue-700 rounded-full overflow-hidden bg-cover
@@ -12,32 +12,33 @@ top-0 left-0 z-10 flex justify-start items-center flex-col ;
 
 }
 .biosection{
-    @apply w-[calc(100%-65px)]  min-h-[30px] bg-cyan-700
+    @apply w-[calc(100%-65px)]  min-h-[30px]
     flex justify-start items-center ml-auto
 
     ;
     .tweeterhandle{
-@apply w-[70%] min-h-[inherit] bg-indigo-500 truncate relative z-20
+@apply w-fit pr-2 min-h-[inherit]  truncate relative z-20 font-semibold cursor-pointer
 ;
     }
     .dateposted{
-        @apply w-[18%] min-h-[inherit] bg-lime-500 ml-auto flex justify-center items-center
+        @apply w-fit min-h-[inherit]  ml-1 mr-auto flex justify-center items-center text-slate-800 font-light cursor-pointer
         ;
     }
     .menu{
-        @apply w-[10%] min-h-[inherit] bg-red-600 ml-auto
+        @apply w-[10%] min-h-[inherit]  ml-auto
         flex justify-center items-center
+        cursor-pointer
 ;
     }
 
 }
 .tweetbody{
     @apply w-[calc(100%-65px)] min-h-[calc(100%-70px)] max-h-[calc(100%-70px)]
-     bg-orange-500  z-20 absolute right-0  overflow-hidden px-1
+      z-20 absolute right-0  overflow-hidden px-1
     ;
 }
 .tweetstats{
-    @apply w-[calc(100%-65px)] min-h-[40px] h-fit bg-cyan-700 absolute bottom-0 right-0 box-border pt-[5px]
+    @apply w-[calc(100%-65px)] min-h-[40px] h-fit   opacity-60 absolute bottom-0 right-0 box-border pt-[5px]
     flex justify-between items-center px-[10px];
     .statssection{
         @apply w-fit flex justify-center items-center cursor-pointer

@@ -47,5 +47,8 @@ app-sendtweet{
   @apply hidden sm:flex min-h-fit h-fit w-full border-b-2 border-slate-500/30 bg-red-500
 }
 .showmoretweets{
-    @apply w-full font-light text-[#1d9bf0] border-b-2 border-black/20 flex justify-center items-center min-h-[50px]
+    @apply w-full cursor-pointer font-light text-[#1d9bf0] border-b-2 border-black/20 flex justify-center items-center min-h-[50px] bg-slate-100
+}
+.twetmarginbottom{
+  @apply min-h-[70px] bg-green-300 min-w-full
 }

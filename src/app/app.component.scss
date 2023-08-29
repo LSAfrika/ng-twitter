@@ -26,9 +26,13 @@ max-h-screen
 
 .body{
   @apply flex-grow  min-h-screen max-h-screen
-   bg-red-500 xl:max-w-[calc(100vw-300px)] ml-auto overflow-x-clip relative
+   bg-slate-100 xl:max-w-[calc(100vw-300px)] ml-auto overflow-x-clip relative
    2xl:max-w-[1000px]
    2xl:mr-auto
 2xl:ml-0
    z-[100]
+}
+
+app-mobilenav{
+  @apply w-full fixed bottom-0 bg-white min-h-[50px] z-[100] sm:hidden
 }

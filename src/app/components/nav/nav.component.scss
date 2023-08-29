@@ -1,9 +1,9 @@
 .nav{
-    @apply w-full   flex justify-start bg-teal-500 items-center flex-col
+    @apply w-full   flex justify-start  items-center flex-col bg-slate-100
 }
 
 .divider{
-    @apply w-full   h-[56px] flex justify-center bg-red-500 items-center  gap-20 font-semibold sticky top-0
+    @apply w-full   h-[56px] flex justify-center  items-center  gap-20 font-semibold sticky top-0
 
 }
 .dividerborderbottom{
@@ -18,7 +18,7 @@
 }
 
 .logo{
-    @apply w-[40px] h-[40px] rounded-full bg-teal-600 overflow-hidden bg-cover  absolute left-[50%] sm:hidden
+    @apply w-[30px] h-[30px] rounded-full  overflow-hidden bg-cover  absolute left-[45%] sm:hidden
 }
 .cursor{
     @apply cursor-pointer
