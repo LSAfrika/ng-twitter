@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UiService } from 'src/app/service/ui.service';
 
 @Component({
   selector: 'app-messaging',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class MessagingComponent {
 
+
+
+  public UIS=inject(UiService)
+  constructor(){
+    this.UIS.acvtivepage('Messages')
+    this.UIS.selectedmenunavigationmethod(3)
+  }
 }

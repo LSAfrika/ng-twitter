@@ -36,3 +36,7 @@ max-h-screen
 app-mobilenav{
   @apply w-full fixed bottom-0 bg-white min-h-[50px] z-[100] sm:hidden
 }
+
+app-fab{
+  @apply fixed bottom-[60px] right-[20px] z-[100] w-[56px] h-[56px]  rounded-full
+}

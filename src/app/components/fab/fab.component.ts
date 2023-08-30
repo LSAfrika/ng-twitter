@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { UiService } from 'src/app/service/ui.service';
+import { Component, inject } from '@angular/core';
 
 @Component({
   selector: 'app-fab',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class FabComponent {
 
+  public UIS=inject(UiService)
 }
