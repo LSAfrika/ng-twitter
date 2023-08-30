@@ -1,3 +1,4 @@
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +12,7 @@ import { NotificationsComponent } from './notifications.component';
   ],
   imports: [
     CommonModule,
-    NotificationsRoutingModule
+    NotificationsRoutingModule,SharedModule
   ]
 })
 export class NotificationsModule { }

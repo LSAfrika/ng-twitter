@@ -1,20 +1,20 @@
 .nav{
-    @apply w-full   flex justify-start  items-center flex-col bg-slate-100
+    @apply w-full   flex justify-start  items-center flex-col bg-slate-100 fixed top-0 z-[100]
 }
 
 .divider{
-    @apply w-full   h-[56px] flex justify-center  items-center  gap-20 font-semibold sticky top-0
+    @apply w-full   h-[56px] flex justify-start  items-center  gap-5 font-semibold sticky top-0 bg-slate-100
 
 }
 .dividerborderbottom{
     @apply border-b-2 border-black/20
 }
 .pagetitle{
-  @apply hidden sm:flex font-semibold text-2xl mr-auto pl-2
+  @apply  flex font-semibold text-lg sm:pl-5 mr-auto  text-slate-900
 }
 
 .avatar{
-    @apply w-[30px] h-[30px] rounded-full bg-pink-600 overflow-hidden bg-cover ml-3 mr-auto sm:hidden
+    @apply w-[30px] h-[30px] rounded-full bg-pink-600 overflow-hidden bg-cover ml-3 sm:hidden
 }
 
 .logo{
@@ -33,4 +33,24 @@
 }
 .bottom{
 @apply shadow-sm shadow-black/30
+}
+.searchbar{
+  @apply w-fit min-h-[30px] rounded-full flex justify-center items-center relative ;
+  input{
+    @apply w-full rounded-full bg-[#ececec] pl-10 min-h-[30px] min-w-[60%] font-light py-1;
+   //color: #ececec
+  }
+  .searchicon{
+    @apply absolute left-3 top-[6px] fill-black/60 cursor-pointer
+  }
+}
+
+
+
+.settings{
+  @apply ml-auto w-[30px] h-[30px]  mr-2 flex justify-center items-center cursor-pointer
+}
+
+.backfromrecentsearchtab{
+  @apply w-[30px] h-[30px] bg-slate-100 absolute ml-3 flex justify-center items-center
 }

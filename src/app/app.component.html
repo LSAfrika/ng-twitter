@@ -4,14 +4,14 @@
     <div class="popoveroverlay" (mouseenter)="UIS.enter()" (mouseleave)="UIS.leave()" (click)="UIS.disablepopover()" *ngIf="(UIS.popover$|async) ==true"></div>
     <app-sidenav></app-sidenav>
   </div>
+  <app-mobilenav></app-mobilenav>
+  <app-fab></app-fab>
 
   <div class="body">
   <router-outlet></router-outlet>
 
 
   </div>
-  <app-fab></app-fab>
 
-  <app-mobilenav></app-mobilenav>
 </div>
 

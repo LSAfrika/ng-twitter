@@ -26,7 +26,7 @@
   <div [ngClass]="{icontitle: getScreenWidth<1280,'font-semibold':UIS.selectednavigation==2}">Notfications</div>
 </div>
 
-<div (click)="UIS.switchnav(3,'messaging')" class="svgeffect messages">
+<div (click)="UIS.switchnav(3,'messages')" class="svgeffect messages">
 
 
   <svg *ngIf="UIS.selectednavigation==3" viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M1.998 4.499c0-.828.671-1.499 1.5-1.499h17c.828 0 1.5.671 1.5 1.499v2.858l-10 4.545-10-4.547V4.499zm0 5.053V19.5c0 .828.671 1.5 1.5 1.5h17c.828 0 1.5-.672 1.5-1.5V9.554l-10 4.545-10-4.547z"></path></g></svg>
@@ -75,7 +75,7 @@
 <div class="user svgeffect">
 <div class="userpic"></div>
 <div [ngClass]="{hidden: getScreenWidth<1280}" class="username">
-  <div class="text-slate-900 font-semibold">L Studios Afrika</div>
+  <div class="font-semibold text-slate-900">L Studios Afrika</div>
   <div class="text-slate-500">@LSAfrika</div>
 </div>
 <div [ngClass]="{hidden: getScreenWidth<1280}" class="menuicon">

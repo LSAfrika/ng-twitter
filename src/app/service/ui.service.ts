@@ -9,14 +9,16 @@ export class UiService {
 
 
 selectednavigation=0
+openrecentsearch=false
 pagetitle='home'
 disabled=true
+exploremodal=false
 public popover$=new BehaviorSubject(false)
 public dropdowncreator$=new BehaviorSubject(false)
 public dropdownprofessional$=new BehaviorSubject(false)
 public dropdownsettings$=new BehaviorSubject(false)
 public activenavmenu=0
-  currentpage: string='home';
+  currentpage: string='';
 
 
 constructor(private router:Router){}

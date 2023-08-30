@@ -3,5 +3,82 @@
 
   <app-nav></app-nav>
 
-  <div>trending for you</div>
+  <div class="title firsttitle">Trending for you</div>
+<div *ngFor="let trend of foryou" class="trending">
+
+  <div (click)="openmodal()" class="menu">
+
+    <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+    style="fill: rgba(0, 0, 0, 1);width:20px;height: 20px;">
+    <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+  </div>
+
+  <div class="country">trending in {{trend.country}}</div>
+  <div class="topic">{{trend.topic}}</div>
+  <div class="posts">{{trend.postscount}}</div>
+  <!-- <div class="menu">  </div> -->
+</div>
+
+  <div class="seemore">see  more</div>
+  <div class="title">What's happening</div>
+  <div *ngFor="let trend of foryou" class="trending">
+
+    <div (click)="openmodal()" class="menu">
+
+      <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+      style="fill: rgba(0, 0, 0, 1);width:20px;height: 20px;">
+      <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+    </div>
+
+    <div class="country">trending in {{trend.country}}</div>
+    <div class="topic">{{trend.topic}}</div>
+    <div class="posts">{{trend.postscount}}</div>
+    <!-- <div class="menu">  </div> -->
+  </div>
+  <div class="seemore seemoreend">see  more</div>
+</div>
+
+<div *ngIf="UIS.openrecentsearch==true" class="recentsearch">
+  <div class="recenttitle">
+
+    <div class="title">Recent</div>
+    <div class="clear">Clear all</div>
+  </div>
+
+  <div class="searchitem">
+    <div class="avatar">
+      <img src="../../../assets/profile1.jpg" alt="">
+    </div>
+    <div class="nameholder">
+<div class="name">John Doe</div>
+<div class="handle">
+  @JohnDoe
+</div>
+    </div>
+<div class="close">
+  <svg style="fill:rgb(29,155,240);width:20px;height:20px" viewBox="0 0 24 24" aria-hidden="true" ><g><path d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"></path></g></svg>
+
+</div>
+
+  </div>
+
+</div>
+
+<div (mouseenter)="enable()" (click)="closemodal()" class="menumodal" *ngIf="UIS.exploremodal==true">
+<div (mouseenter)="disable()" class="modal">
+  <div class="modalitem">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" ><g><path d="M9.5 7c.828 0 1.5 1.119 1.5 2.5S10.328 12 9.5 12 8 10.881 8 9.5 8.672 7 9.5 7zm5 0c.828 0 1.5 1.119 1.5 2.5s-.672 2.5-1.5 2.5S13 10.881 13 9.5 13.672 7 14.5 7zM12 22.25C6.348 22.25 1.75 17.652 1.75 12S6.348 1.75 12 1.75 22.25 6.348 22.25 12 17.652 22.25 12 22.25zm0-18.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25S16.549 3.75 12 3.75zM8.947 17.322l-1.896-.638C7.101 16.534 8.322 13 12 13s4.898 3.533 4.949 3.684l-1.897.633c-.031-.09-.828-2.316-3.051-2.316s-3.021 2.227-3.053 2.322z"></path></g></svg>
+
+    <span>I'm not interested in this</span>
+  </div>
+
+  <div class="modalitem">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" ><g><path d="M9.5 7c.828 0 1.5 1.119 1.5 2.5S10.328 12 9.5 12 8 10.881 8 9.5 8.672 7 9.5 7zm5 0c.828 0 1.5 1.119 1.5 2.5s-.672 2.5-1.5 2.5S13 10.881 13 9.5 13.672 7 14.5 7zM12 22.25C6.348 22.25 1.75 17.652 1.75 12S6.348 1.75 12 1.75 22.25 6.348 22.25 12 17.652 22.25 12 22.25zm0-18.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25S16.549 3.75 12 3.75zM8.947 17.322l-1.896-.638C7.101 16.534 8.322 13 12 13s4.898 3.533 4.949 3.684l-1.897.633c-.031-.09-.828-2.316-3.051-2.316s-3.021 2.227-3.053 2.322z"></path></g></svg>
+
+    <span>This trend is harmful or spam</span>
+
+  </div>
+
+  <button (click)="exitmodal()">cancel</button>
+</div>
 </div>
