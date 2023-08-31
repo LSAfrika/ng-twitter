@@ -4,9 +4,9 @@
         <div class="avatar"></div>
     </div>
     <div class="biosection">
-        <div class="tweeterhandle">elon <span class="text-slate-800 font-light">@elonmaskceotwitter</span></div>
+        <div class="tweeterhandle">{{tweetdata.name}} <span class="font-light text-slate-800">@{{tweetdata.handle}}</span></div>
 
-        <div class="dateposted">1h</div>
+        <div class="dateposted">{{tweetdata.timeposted |date:'MMMM d'}}</div>
         <div class="menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
             style="fill: rgba(0, 0, 0, 1);">
@@ -16,8 +16,11 @@
 
 
 
+        <div *ngIf="UIS.currentpage=='notifications'" class="replyingto">
+          <span class="mr-2 font-light text-slate-600">Replying to</span>
+           <span class="handle">{{tweetdata.replyingtohandle}}</span></div>
     </div>
-    <div class="tweetbody">{{tweetvalue}}</div>
+    <div class="tweetbody">{{tweetdata.tweetreply}}</div>
     <div class="tweetstats">
 
         <div class="statssection">
@@ -50,6 +53,9 @@
         </div>
     </div>
 
+    <ng-container *ngIf="">
+
+    </ng-container>
 
 
 

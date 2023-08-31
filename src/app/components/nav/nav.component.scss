@@ -29,7 +29,7 @@
 }
 
 .dividersub{
-  @apply flex flex-col justify-start items-center flex-grow  min-w-[33%]
+  @apply flex flex-col justify-center items-center flex-grow  min-w-[33%] hover:bg-slate-200 min-h-[50px] text-center
 }
 
 .active{

@@ -13,7 +13,7 @@ top-0 left-0 z-10 flex justify-start items-center flex-col ;
 }
 .biosection{
     @apply w-[calc(100%-65px)]  min-h-[30px]
-    flex justify-start items-center ml-auto
+    flex justify-start items-center ml-auto flex-wrap
 
     ;
     .tweeterhandle{
@@ -21,7 +21,7 @@ top-0 left-0 z-10 flex justify-start items-center flex-col ;
 ;
     }
     .dateposted{
-        @apply w-fit min-h-[inherit]  ml-1 mr-auto flex justify-center items-center text-slate-800 font-light cursor-pointer
+        @apply w-fit min-h-[inherit]  ml-1 mr-auto flex justify-center items-center text-slate-800 font-light cursor-pointer text-xs
         ;
     }
     .menu{
@@ -29,6 +29,13 @@ top-0 left-0 z-10 flex justify-start items-center flex-col ;
         flex justify-center items-center
         cursor-pointer
 ;
+    }
+    .replyingto{
+      @apply block w-full
+    }
+
+    .handle{
+      @apply text-[#1d9bf0] font-normal cursor-pointer
     }
 
 }

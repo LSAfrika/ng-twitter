@@ -2,11 +2,31 @@
   <app-nav></app-nav>
 
   <div class="all tab" *ngIf="UIS.activenavmenu==0">
-<app-tweet [tweetdata]="tweetdata"></app-tweet>
+<app-tweet *ngFor="let tweet of tweetsvc.notificationtweets" [tweetdata]="tweet"></app-tweet>
 
   </div>
-  <div class="verified tab" *ngIf="UIS.activenavmenu==1"></div>
-<div class="mentions tab" *ngIf="UIS.activenavmenu==2"></div>
+  <div class="verified tab" *ngIf="UIS.activenavmenu==1">
+    <div class="verifiedimage">
+      <img src="../../../assets/verified.png" alt="" srcset="">
+    </div>
+    <div class="verfiedtext">Nothing to see here <br> — yet</div>
+    <div class="verifiedexplanation">
+      Likes, mentions, reposts and a whole lot more – when it comes from a verified account, you’ll find it here.
+      <a >Learn more</a>
+    </div>
+  </div>
+<div class="mentions tab" *ngIf="UIS.activenavmenu==2">
+<img src="../../../assets/mentions.png" alt="" srcset="">
+<div class=" verfiedtext mentiontextsize">Control which conversations you’re mentioned in</div>
+
+<div class="mb-[32px] verifiedexplanation">
+  Use the action menu — those three little dots on a Tweet — to untag yourself and leave a conversation.
+  <a >Learn more</a>
+</div>
+
+<app-tweet *ngFor="let tweet of tweetsvc.notificationtweets" [tweetdata]="tweet"></app-tweet>
+
+</div>
 
 
 

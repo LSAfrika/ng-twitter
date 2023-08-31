@@ -8,13 +8,27 @@
 
 }
 .all{
-@apply bg-teal-500
+// @apply
 }
 .verified{
-@apply bg-pink-600
+// @apply bg-pink-600
 }
 .mentions{
-  @apply bg-orange-400
+   @apply px-0
+}
+
+
+.verfiedtext{
+  @apply text-[31px] font-extrabold w-full  px-8 mt-5
+}
+.mentiontextsize{
+  @apply text-[28px] text-slate-800
+}
+.verifiedexplanation{
+  @apply w-full px-5 text-slate-600 text-[15px] pt-5 px-8;
+a{
+@apply text-black font-semibold underline cursor-pointer
+}
 }
 
 app-tweet{
