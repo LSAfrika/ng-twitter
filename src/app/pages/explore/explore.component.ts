@@ -1,10 +1,7 @@
 import { Component, inject } from '@angular/core';
+import { trending } from 'src/app/models/trending.interface';
 import { UiService } from 'src/app/service/ui.service';
-export interface trending {
-  country: string
-  topic: string
-  postscount: number
-}
+
 
 
 @Component({

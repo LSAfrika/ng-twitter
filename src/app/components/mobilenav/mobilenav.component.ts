@@ -26,7 +26,7 @@ this.UIS.acvtivepage('explore')
   }
 
   messages(){
-    this.UIS.acvtivepage('Messages')
+    this.UIS.acvtivepage('messages')
     this.UIS.switchnav(3,'messages')
 
   }

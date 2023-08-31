@@ -44,6 +44,30 @@
 
 
     </div>
+
+    <div *ngIf="UIS.currentpage=='notifications'"  class="divider dividernotifcations dividerborderbottom">
+      <div class="dividersub cursor" (click)="UIS.activemenuselect(0)" >
+        <div [ngClass]="{ activetab:UIS.activenavmenu==0}"> All</div>
+          <div [ngClass]="{active:UIS.activenavmenu==0}"></div>
+      </div>
+      <div class="dividersub cursor" (click)="UIS.activemenuselect(1)">
+        <div [ngClass]="{ activetab:UIS.activenavmenu==1}">Verified </div>
+        <div [ngClass]="{active:UIS.activenavmenu==1}"></div>
+
+      </div>
+
+      <div class="dividersub cursor" (click)="UIS.activemenuselect(2)">
+        <div [ngClass]="{ activetab:UIS.activenavmenu==2}">
+
+          Mentions
+        </div>
+        <div [ngClass]="{'active activetab':UIS.activenavmenu==2}"></div>
+
+      </div>
+
+
+  </div>
+
 </div>
 
 

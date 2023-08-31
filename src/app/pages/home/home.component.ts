@@ -11,6 +11,8 @@ export class HomeComponent {
 constructor(){
   this.UIS.acvtivepage('home')
   this.UIS.selectedmenunavigationmethod(0)
+this.UIS.tweetstats=true
+
 
 }
 

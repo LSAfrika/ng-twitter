@@ -9,6 +9,7 @@ export class UiService {
 
 
 selectednavigation=0
+tweetstats=true
 openrecentsearch=false
 pagetitle='home'
 disabled=true

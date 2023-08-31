@@ -1,3 +1,13 @@
 <div class="notifications">
   <app-nav></app-nav>
+
+  <div class="all tab" *ngIf="UIS.activenavmenu==0">
+<app-tweet [tweetdata]="tweetdata"></app-tweet>
+
+  </div>
+  <div class="verified tab" *ngIf="UIS.activenavmenu==1"></div>
+<div class="mentions tab" *ngIf="UIS.activenavmenu==2"></div>
+
+
+
 </div>
