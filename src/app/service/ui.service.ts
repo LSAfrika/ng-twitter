@@ -18,7 +18,7 @@ public popover$=new BehaviorSubject(false)
 public dropdowncreator$=new BehaviorSubject(false)
 public dropdownprofessional$=new BehaviorSubject(false)
 public dropdownsettings$=new BehaviorSubject(false)
-public activenavmenu=2
+public activenavmenu=0
   currentpage: string='';
 
 

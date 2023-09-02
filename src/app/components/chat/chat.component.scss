@@ -1,0 +1,28 @@
+.chat{
+
+  @apply  min-h-[50px] min-w-full   bg-green-600 flex justify-start items-center gap-2
+}
+.avatararea{
+  @apply  flex-grow-[1]
+}
+.avatar{
+  @apply w-[40px] h-[40px] rounded-full bg-cover bg-red-400 overflow-hidden
+}
+.message{
+  @apply w-full bg-cyan-600 flex flex-col justify-start items-start min-h-[50px] overflow-x-clip  flex-grow-[3]
+}
+  .handlebody{
+    @apply flex w-full justify-start items-center gap-2 bg-yellow-300 max-h-[20px]
+  }
+  .handle{
+    @apply  bg-lime-500 truncate pl-1 max-w-[200px] max-h-[inherit] flex justify-start
+  }
+  .date{
+    @apply truncate text-sm text-center
+  }
+// .body{
+// @apply w-full bg-blue-500  truncate py-2;
+// .usermessage{
+//   @apply max-w-[375px] min-h-[10px] bg-emerald-500 truncate
+// }
+// }
