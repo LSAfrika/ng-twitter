@@ -16,4 +16,11 @@ export class MessagesComponent {
 
   }
 
+  openrecentmessagesmodal(){
+    this.UIS.openmessagesearch=true
+  }
+  closerecentmessagesmodal(){
+    this.UIS.openmessagesearch=false
+
+  }
 }

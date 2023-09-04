@@ -1,15 +1,15 @@
 .chat{
 
-  @apply  min-h-[50px] min-w-full   bg-green-600 flex justify-start items-center gap-2
+  @apply  min-h-[50px] min-w-full   bg-green-600 flex justify-start items-center gap-2 max-h-[80px]
 }
 .avatararea{
-  @apply  flex-grow-[1]
+  @apply  flex-grow-[1] justify-center items-center flex
 }
 .avatar{
-  @apply w-[40px] h-[40px] rounded-full bg-cover bg-red-400 overflow-hidden
+  @apply w-[50px] h-[50px] rounded-full bg-cover bg-red-400 overflow-hidden pl-2
 }
 .message{
-  @apply w-full bg-cyan-600 flex flex-col justify-start items-start min-h-[50px] overflow-x-clip  flex-grow-[3]
+  @apply w-full bg-cyan-600 flex flex-col justify-start items-start min-h-[50px] max-h-[inherit] overflow-x-clip  flex-grow-[3] truncate max-w-[300px]
 }
   .handlebody{
     @apply flex w-full justify-start items-center gap-2 bg-yellow-300 max-h-[20px]
@@ -20,9 +20,9 @@
   .date{
     @apply truncate text-sm text-center
   }
-// .body{
-// @apply w-full bg-blue-500  truncate py-2;
-// .usermessage{
-//   @apply max-w-[375px] min-h-[10px] bg-emerald-500 truncate
-// }
-// }
+.body{
+@apply w-full bg-blue-500  truncate py-1;
+.usermessage{
+  @apply max-w-[375px] min-h-[10px] bg-emerald-500 truncate
+}
+}

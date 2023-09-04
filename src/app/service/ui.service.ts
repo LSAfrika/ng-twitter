@@ -11,6 +11,7 @@ export class UiService {
 selectednavigation=0
 tweetstats=true
 openrecentsearch=false
+openmessagesearch=false
 pagetitle='home'
 disabled=true
 exploremodal=false
