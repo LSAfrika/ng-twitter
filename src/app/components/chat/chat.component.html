@@ -11,9 +11,10 @@
   <div class="handlebody">
     <div class="handle">
       <div class="name">{{message.name}}</div>
-      <div class="truncate">@{{message.handle}}</div>
+      <div class="truncate lg:max-w-[80px]">@{{message.handle}}</div>
     </div>
-    <div class="date">{{message.date | date:' MMMM d, y'}}</div>
+    <div *ngIf="screenwidth<1000" class="date">{{message.date | date:' MMMM d, y'}}</div>
+    <div *ngIf="screenwidth>=1000" class="date">{{message.date | date:'shortDate'}}</div>
     <div class="menu">
       
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

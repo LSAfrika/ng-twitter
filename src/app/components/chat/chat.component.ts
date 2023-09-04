@@ -8,10 +8,11 @@ import { messages } from 'src/app/models/messages.interface';
 })
 export class ChatComponent {
 @Input() message!:messages 
+@Input() screenwidth!:number 
 
 
 ngOnInit(){
-console.log('message',this.message);
+console.log('screen width',this.screenwidth);
 
 }
 }

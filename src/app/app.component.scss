@@ -1,7 +1,7 @@
 
 #app{
     @apply min-w-full min-h-screen flex justify-start items-start relative
-     bg-teal-500
+ bg-slate-100
 }
 
 .nav{
@@ -12,7 +12,7 @@
          2xl:min-w-[400px]
          sm:flex
          hidden
-         bg-blue-500
+        
          min-h-screen
 
 

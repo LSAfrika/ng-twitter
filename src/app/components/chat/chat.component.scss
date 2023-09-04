@@ -1,6 +1,7 @@
 .chat{
 
-  @apply  min-h-[50px] min-w-[300px]   flex justify-start items-center gap-2 max-h-[80px] pl-1 my-3
+  @apply  min-h-[50px] min-w-[300px]   flex justify-start items-center gap-2 max-h-[80px] pl-1 my-3  md:max-w-[600px]
+  lg:max-w-[300px]
 }
 .avatararea{
   @apply  flex-grow-[1] justify-center items-center flex
@@ -9,26 +10,31 @@
   @apply w-[50px] h-[50px] rounded-full bg-cover bg-slate-400 overflow-hidden 
 }
 .messagearea{
-  @apply w-full  flex flex-col justify-start items-start min-h-[50px] max-h-[inherit] overflow-x-clip  flex-grow-[3] truncate max-w-[300px] cursor-pointer
+  @apply w-full  flex flex-col justify-start
+   items-start min-h-[50px] max-h-[inherit] overflow-x-clip  flex-grow-[3] truncate max-w-[300px]  md:max-w-[600px]   lg:max-w-[300px] cursor-pointer
 }
   .handlebody{
-    @apply flex w-full justify-start items-center gap-2  max-h-[30px] 
+    @apply flex w-full justify-start items-center gap-2  max-h-[30px] md:max-w-[600px]   lg:max-w-[250px] 
   }
   .handle{
-    @apply  truncate pl-1 max-w-[160px] max-h-[inherit] flex justify-start cursor-pointer min-w-[160px] text-slate-600 min-h-fit
+    @apply  truncate pl-1 max-w-[160px] max-h-[inherit] 
+    flex justify-start cursor-pointer 
+    min-w-[160px] md:max-w-[400px]
+    lg:max-w-[100px] text-slate-600 min-h-fit lg:min-w-0
+    
   }
   .name{
-    @apply text-black min-h-[25px]
+    @apply text-black min-h-[25px] lg:max-w-[50px] truncate
   }
   .date{
-    @apply truncate text-xs text-center ml-auto text-slate-600
+    @apply truncate text-xs text-center ml-auto text-slate-600 lg:min-w-[85px]
   }
   .menu{
-    @apply max-w-[20px] min-h-fit mx-auto cursor-pointer text-slate-600
+    @apply max-w-[20px] min-h-fit  mx-2 cursor-pointer text-slate-600
   }
 .body{
-@apply w-full   truncate py-1 min-w-[350px];
+@apply w-full   truncate py-1 min-w-[350px] md:min-w-[600px] md:max-w-[600px] lg:min-w-fit  lg:max-w-[250px] ;
 .usermessage{
-  @apply max-w-[375px] min-h-[10px]  truncate w-[75%]  text-slate-600
+  @apply max-w-[375px] min-h-[10px]  truncate w-[95%]  text-slate-600 lg:max-w-[200px]
 }
 }

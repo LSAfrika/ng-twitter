@@ -1,11 +1,13 @@
 .nav{
-    @apply w-full   flex justify-start  items-center flex-col bg-slate-100 fixed top-0 z-[100]
+    @apply w-full   flex justify-start  items-center flex-col bg-slate-100 fixed top-0 z-[100] lg:max-w-[320px] lg:border-r-2 lg:border-r-slate-300
 }
 
 .divider{
-    @apply w-full   h-[56px] flex justify-start  items-center  gap-5 font-semibold sticky top-0 bg-slate-100
+    @apply w-full   h-[56px] flex justify-start  items-center  gap-2 font-semibold sticky top-0 bg-slate-100 
+   
 
 }
+
 
 .dividernotifcations{
   @apply justify-evenly text-slate-500 gap-0
@@ -14,9 +16,11 @@
     @apply border-b-2 border-black/20
 }
 .pagetitle{
-  @apply  flex font-semibold text-lg sm:pl-5 mr-auto  text-slate-900
+  @apply  flex font-semibold text-lg sm:pl-5 mr-auto  text-slate-900 md:ml-0
 }
-
+.plmessage{
+  @apply pl-[75px] md:pl-[125px] lg:pl-[30px]
+}
 .avatar{
     @apply w-[30px] h-[30px] rounded-full bg-pink-600 overflow-hidden bg-cover ml-3 sm:hidden
 }
@@ -56,6 +60,12 @@
 
 .settings{
   @apply ml-auto w-[30px] h-[30px]  mr-2 flex justify-center items-center cursor-pointer
+}
+.sendmsg{
+  @apply ml-0 w-[30px] h-[30px]  mr-2 flex justify-center items-center cursor-pointer
+}
+.mrzero{
+  @apply mr-0
 }
 
 .backfromrecentsearchtab{
