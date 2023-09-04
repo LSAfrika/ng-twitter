@@ -1,17 +1,25 @@
 <div class="chat">
   <div class="avatarea">
 
-    <div class="avatar"></div>
+    <div class="avatar">
+      <img src="{{message.imgurl}}" class="w-full h-full" alt="">
+    </div>
   </div>
 
-<div class="message">
+<div class="messagearea">
 
   <div class="handlebody">
     <div class="handle">
-      <div class="name">elon</div>
-      <div class="truncate">@elonmasklorem190outyghgdfsdfsdfsd</div>
+      <div class="name">{{message.name}}</div>
+      <div class="truncate">@{{message.handle}}</div>
     </div>
-    <div class="date">10th June,2023</div>
+    <div class="date">{{message.date | date:' MMMM d, y'}}</div>
+    <div class="menu">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      style="fill: rgba(0, 0, 0, 1);">
+      <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+  </div>
   </div>
 
 
@@ -21,7 +29,7 @@
   <div class="body">
     <div class="usermessage">
 
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, quae.
+    {{message.message}}
     </div>
   </div>
 </div>

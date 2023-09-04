@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { messages } from 'src/app/models/messages.interface';
 
 @Component({
   selector: 'app-chat',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent {
+@Input() message!:messages 
 
+
+ngOnInit(){
+console.log('message',this.message);
+
+}
 }

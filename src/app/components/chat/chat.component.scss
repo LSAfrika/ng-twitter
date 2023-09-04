@@ -1,28 +1,34 @@
 .chat{
 
-  @apply  min-h-[50px] min-w-full   bg-green-600 flex justify-start items-center gap-2 max-h-[80px]
+  @apply  min-h-[50px] min-w-[300px]   flex justify-start items-center gap-2 max-h-[80px] pl-1 my-3
 }
 .avatararea{
   @apply  flex-grow-[1] justify-center items-center flex
 }
 .avatar{
-  @apply w-[50px] h-[50px] rounded-full bg-cover bg-red-400 overflow-hidden pl-2
+  @apply w-[50px] h-[50px] rounded-full bg-cover bg-slate-400 overflow-hidden 
 }
-.message{
-  @apply w-full bg-cyan-600 flex flex-col justify-start items-start min-h-[50px] max-h-[inherit] overflow-x-clip  flex-grow-[3] truncate max-w-[300px]
+.messagearea{
+  @apply w-full  flex flex-col justify-start items-start min-h-[50px] max-h-[inherit] overflow-x-clip  flex-grow-[3] truncate max-w-[300px] cursor-pointer
 }
   .handlebody{
-    @apply flex w-full justify-start items-center gap-2 bg-yellow-300 max-h-[20px]
+    @apply flex w-full justify-start items-center gap-2  max-h-[30px] 
   }
   .handle{
-    @apply  bg-lime-500 truncate pl-1 max-w-[200px] max-h-[inherit] flex justify-start
+    @apply  truncate pl-1 max-w-[160px] max-h-[inherit] flex justify-start cursor-pointer min-w-[160px] text-slate-600 min-h-fit
+  }
+  .name{
+    @apply text-black min-h-[25px]
   }
   .date{
-    @apply truncate text-sm text-center
+    @apply truncate text-xs text-center ml-auto text-slate-600
+  }
+  .menu{
+    @apply max-w-[20px] min-h-fit mx-auto cursor-pointer text-slate-600
   }
 .body{
-@apply w-full bg-blue-500  truncate py-1;
+@apply w-full   truncate py-1 min-w-[350px];
 .usermessage{
-  @apply max-w-[375px] min-h-[10px] bg-emerald-500 truncate
+  @apply max-w-[375px] min-h-[10px]  truncate w-[75%]  text-slate-600
 }
 }

@@ -10,6 +10,6 @@
     <input (click)="openrecentmessagesmodal()" [ngClass]="{searchbaractive:UIS.openmessagesearch==true}" placeholder="Search Direct Messages" type="text" name="" id="">
   
   </div>
-  <app-chat></app-chat>
+  <app-chat *ngFor="let message of Messagesvc.directmessages" [message]="message"></app-chat>
 
 </div>
