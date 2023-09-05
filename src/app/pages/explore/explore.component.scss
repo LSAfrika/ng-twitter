@@ -1,5 +1,9 @@
+
+.explorecontainer{
+  @apply xl:min-w-[900px] flex justify-start items-start  bg-blue-500
+}
 .explore{
-  @apply px-1 flex flex-col justify-start
+  @apply px-1 flex flex-col justify-start xl:max-w-[600px]   md:min-w-[640px] sm:min-w-[430px] w-full
 }
 .title{
   @apply font-bold text-lg text-black mb-5 pl-[10px]
@@ -37,6 +41,12 @@
 }
 .recenttitle{
   @apply w-full  min-h-fit font-[500] cursor-pointer flex justify-between px-3 items-start text-[rgb(29,155,240)] text-base
+}
+
+
+
+.whotofollow{
+  @apply hidden xl:min-w-[350px] min-h-screen bg-teal-400 xl:flex mx-auto flex-col justify-start gap-2 px-2 items-start
 }
 
 .searchitem{

@@ -1,7 +1,7 @@
 .main{
   @apply min-w-[70px]
    md:min-w-[120px]
-   lg:min-w-[90px]
+   lg:min-w-[100px]
    xl:min-w-[300px]
    2xl:min-w-[400px]
   w-full flex md:items-end flex-col
@@ -38,7 +38,7 @@
     .userpic{
       @apply w-[40px] h-[40px] bg-blue-600 rounded-full bg-cover overflow-hidden justify-center items-center flex
     }
-    .username{
+    .userna {
       @apply flex flex-col justify-start items-center flex-grow
     }
 

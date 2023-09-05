@@ -9,11 +9,11 @@
 }
 .messages{
   @apply  min-w-full  min-h-screen md:border-r-2 border-r-slate-300
-  lg:max-w-[320px] md:max-w-[600px] lg:min-w-0 flex flex-col justify-start items-center 2xl:min-w-[420px] 2xl:max-w-[420px]
+  lg:max-w-[320px] md:max-w-[600px]  flex flex-col justify-start items-center 2xl:min-w-[420px] 2xl:max-w-[420px] lg:min-w-[300px]
 }
 .viewmessage{
   @apply hidden
-  lg:max-w-[calc(100vw-410px)] bg-slate-100 min-h-screen w-full items-center flex-col justify-center  xl:max-w-[655px] 2xl:max-w-[555px]
+  lg:min-w-[calc(100vw-410px)]  bg-slate-100 min-h-screen w-full items-center flex-col justify-center  xl:max-w-[655px] 2xl:max-w-[555px]
   lg:flex;
   .containernewmsg{
     @apply max-w-[350px] min-h-fit flex flex-col justify-start items-start gap-5;

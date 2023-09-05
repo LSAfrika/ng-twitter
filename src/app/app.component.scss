@@ -12,7 +12,7 @@
          2xl:min-w-[400px]
          sm:flex
          hidden
-        
+        fixed top-0 left-0
          min-h-screen
 
 
@@ -25,8 +25,10 @@ max-h-screen
 }
 
 .body{
-  @apply flex-grow  min-h-screen max-h-screen
-   bg-slate-100 xl:max-w-[calc(100vw-300px)] ml-auto overflow-x-clip relative
+  @apply flex-grow  min-h-screen max-h-fit
+   bg-slate-100 xl:max-w-[calc(100vw-300px)] ml-auto xl:ml-[300px] overflow-x-clip relative
+   md:max-w-[647px] md:min-w-[600px] mr-auto sm:ml-[70px] md:ml-[120px]
+   sm:max-w-[439px]
    2xl:max-w-[1000px]
    2xl:mr-auto
 2xl:ml-0

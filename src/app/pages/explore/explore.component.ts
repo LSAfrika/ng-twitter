@@ -49,6 +49,9 @@ export class ExploreComponent {
     this.UIS.acvtivepage('explore')
     this.UIS.selectedmenunavigationmethod(1)
 
+    console.log(this.UIS.currentpage);
+
+
   }
 
 

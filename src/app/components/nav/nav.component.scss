@@ -1,9 +1,15 @@
 .nav{
-    @apply w-full   flex justify-start  items-center flex-col bg-slate-100 fixed top-0 z-[100] lg:max-w-[320px] 2xl:max-w-[420px] 2xl:border-none lg:border-r-2 lg:border-r-slate-300
+    @apply w-full   flex justify-start  items-center flex-col bg-slate-600 fixed top-0 z-[100]
+    md:max-w-[647px]
+    lg:max-w-[640px]
+    xl:min-w-[590px]
+     2xl:max-w-[420px] 2xl:border-none;
+    // lg:border-r-2 lg:border-r-slate-300
 }
 
 .divider{
     @apply w-full   h-[56px] flex justify-start  items-center  gap-2 font-semibold sticky top-0 bg-slate-100
+    md:max-w-[600px] xl:min-w-[600px]
 
 
 }
@@ -46,7 +52,7 @@
 @apply shadow-sm shadow-black/30
 }
 .searchbar{
-  @apply w-fit min-h-[30px] rounded-full flex justify-center items-center relative ;
+  @apply w-fit min-h-[30px] rounded-full flex justify-center items-center relative md:min-w-[500px] md:mx-auto ;
   input{
     @apply w-full rounded-full bg-[#ececec] pl-10 min-h-[30px] min-w-[60%] font-light py-1;
    //color: #ececec
@@ -67,7 +73,9 @@
 .mrzero{
   @apply mr-0
 }
-
+.hidemessagesiconexplore{
+  @apply hidden
+}
 .backfromrecentsearchtab{
   @apply w-[30px] h-[30px] bg-slate-100 absolute ml-3 flex justify-center items-center cursor-pointer
 }

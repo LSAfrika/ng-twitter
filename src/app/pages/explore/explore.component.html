@@ -1,26 +1,10 @@
+<div class="explorecontainer">
 
-<div class="explore">
+  <div class="explore">
 
-  <app-nav></app-nav>
+    <app-nav></app-nav>
 
-  <div class="title firsttitle">Trending for you</div>
-<div *ngFor="let trend of foryou" class="trending">
-
-  <div (click)="openmodal()" class="menu">
-
-    <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-    style="fill: rgba(0, 0, 0, 1);width:20px;height: 20px;">
-    <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
-  </div>
-
-  <div class="country">trending in {{trend.country}}</div>
-  <div class="topic">{{trend.topic}}</div>
-  <div class="posts">{{trend.postscount}}</div>
-  <!-- <div class="menu">  </div> -->
-</div>
-
-  <div class="seemore">see  more</div>
-  <div class="title">What's happening</div>
+    <div class="title firsttitle">Trending for you</div>
   <div *ngFor="let trend of foryou" class="trending">
 
     <div (click)="openmodal()" class="menu">
@@ -35,7 +19,32 @@
     <div class="posts">{{trend.postscount}}</div>
     <!-- <div class="menu">  </div> -->
   </div>
-  <div class="seemore seemoreend">see  more</div>
+
+    <div class="seemore">see  more</div>
+    <div class="title">What's happening</div>
+    <div *ngFor="let trend of foryou" class="trending">
+
+      <div (click)="openmodal()" class="menu">
+
+        <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+        style="fill: rgba(0, 0, 0, 1);width:20px;height: 20px;">
+        <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+      </div>
+
+      <div class="country">trending in {{trend.country}}</div>
+      <div class="topic">{{trend.topic}}</div>
+      <div class="posts">{{trend.postscount}}</div>
+      <!-- <div class="menu">  </div> -->
+    </div>
+    <div class="seemore seemoreend">see  more</div>
+
+
+  </div>
+
+  <div class="whotofollow">
+    <h1>Who to Follow</h1>
+
+  </div>
 </div>
 
 <div *ngIf="UIS.openrecentsearch==true" class="recentsearch">
