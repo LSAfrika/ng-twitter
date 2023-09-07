@@ -5,7 +5,7 @@
     <app-nav></app-nav>
 
     <div class="title firsttitle">Trending for you</div>
-  <div *ngFor="let trend of foryou" class="trending">
+  <div *ngFor="let trend of notifiservice.foryou" class="trending">
 
     <div (click)="openmodal()" class="menu">
 
@@ -22,7 +22,7 @@
 
     <div class="seemore">see  more</div>
     <div class="title">What's happening</div>
-    <div *ngFor="let trend of foryou" class="trending">
+    <div *ngFor="let trend of notifiservice.foryou" class="trending">
 
       <div (click)="openmodal()" class="menu">
 

@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { trending } from 'src/app/models/trending.interface';
 import { UiService } from 'src/app/service/ui.service';
+import { NotificationsService } from 'src/app/services/notifications.service';
 
 
 
@@ -14,34 +15,7 @@ import { UiService } from 'src/app/service/ui.service';
 export class ExploreComponent {
   public UIS = inject(UiService)
 
-  foryou: trending[] = [
-    {
-      country: 'kenya',
-      topic: 'Christine nampeera',
-      postscount: 100
-    },
-    {
-      country: 'kenya',
-      topic: '#viralvide',
-      postscount: 2300
-    },
-    {
-      country: 'kenya',
-      topic: 'BREAKING NEWS',
-      postscount: 1520
-    },
-    {
-      country: 'kenya',
-      topic: 'Uhuru',
-      postscount: 5460
-    },
-    {
-      country: 'kenya',
-      topic: '#bubagirl',
-      postscount: 9820
-    }
-
-  ]
+  public notifiservice=inject(NotificationsService)
 
   modalstate=false
 

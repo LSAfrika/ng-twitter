@@ -28,7 +28,9 @@ max-h-screen
   @apply flex-grow  min-h-screen max-h-fit
    bg-slate-100 xl:max-w-[calc(100vw-300px)] ml-auto xl:ml-[300px] overflow-x-clip relative
    md:max-w-[647px] md:min-w-[600px] mr-auto sm:ml-[70px] md:ml-[120px]
+
    sm:max-w-[439px]
+   lg:max-w-[calc(100vw-110px)]
    2xl:max-w-[1000px]
    2xl:mr-auto
 2xl:ml-0

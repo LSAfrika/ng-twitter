@@ -1,17 +1,23 @@
 .notifications{
-  @apply px-1
+  @apply px-1 flex flex-col justify-start items-start lg:flex-row
 
 }
+.notificationsmain{
+  @apply w-full min-w-[600px]
+}
+
 .tab{
 
-  @apply w-full flex flex-col justify-start items-center min-h-[calc(100vh-56px)] mt-[113px] px-1
+  @apply w-full flex flex-col justify-start items-center min-h-[calc(100vh-56px)] mt-[113px] px-1 lg:max-w-[600px]
 
 }
-.all{
-// @apply
+
+.terendingsidepanel{
+  @apply w-full  flex-grow-0 min-h-screen max-h-screen overflow-scroll bg-pink-600 flex flex-col justify-start items-center relative
 }
-.verified{
-// @apply bg-pink-600
+
+.explorecontainer{
+  @apply w-full max-w-[350px] bg-red-500 sticky top-0
 }
 .mentions{
    @apply px-0
@@ -32,5 +38,43 @@ a{
 }
 
 app-tweet{
-  @apply min-w-[350px] bg-white mt-2 w-full
+  @apply min-w-[350px] bg-white mt-2 w-full lg:max-w-[590px]
+}
+
+
+.explore{
+  @apply min-w-[270px]  flex-grow
+}
+.notificationsearch{
+  @apply w-full max-w-[inherit] min-h-[50px] bg-teal-400
+}
+.title{
+  @apply font-bold text-lg text-black mb-5 pl-[10px]
+}
+.firsttitle{
+  @apply pt-[60px]
+}
+
+.trending{
+  @apply min-w-full min-h-[50px]  flex justify-start items-start flex-col relative my-2 px-[10px] cursor-pointer ;
+  .menu{
+@apply absolute top-0 right-2 w-[30px] h-[30px] flex justify-center items-center  hover:rounded-full hover:bg-[#82cdff37]
+  }
+
+  .country{
+    @apply font-light text-sm text-slate-600
+  }
+  .topic{
+    @apply font-semibold text-[15px] text-black
+  }
+  .posts{
+      @apply font-light text-sm text-slate-600
+  }
+}
+
+.seemore{
+  @apply min-w-full min-h-[20px] block font-light pl-2 text-left text-[#1d9bf0] my-[20px]
+}
+.seemoreend{
+@apply mb-[100px]
 }
