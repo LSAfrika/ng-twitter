@@ -46,7 +46,17 @@ app-tweet{
   @apply min-w-[270px]  flex-grow
 }
 .notificationsearch{
-  @apply w-full max-w-[inherit] min-h-[50px] bg-teal-400
+  @apply w-full max-w-[inherit] min-h-[50px] bg-slate-400 flex justify-center items-center px-2 relative;
+  input{
+    @apply w-[96%] rounded-full p-1 pl-[30px] text-sm  h-[inherit] bg-slate-200
+  }
+  .searchicon{
+    @apply absolute  w-[25px] h-[25px]   flex justify-center items-center pl-1 left-4
+  }
+
+  .recentserachtab{
+    @apply absolute w-[95%] min-h-[100px] z-30 shadow-md shadow-black/40 -bottom-[100px] bg-slate-100 rounded-lg
+  }
 }
 .title{
   @apply font-bold text-lg text-black mb-5 pl-[10px]
