@@ -6,7 +6,7 @@
 
     xl:min-w-[590px]
      2xl:max-w-[420px] 2xl:border-none;
-    // lg:border-r-2 lg:border-r-slate-300
+
 }
 
 .divider{
@@ -37,7 +37,7 @@
   @apply justify-evenly text-slate-500 gap-0
 }
 .dividerborderbottom{
-    @apply border-b-2 border-black/20
+    @apply border-b-[1px] border-black/20
 }
 .pagetitle{
   @apply  flex font-semibold text-lg sm:pl-5 mr-auto  text-slate-900 md:ml-0

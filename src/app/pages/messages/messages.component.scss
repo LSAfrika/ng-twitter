@@ -8,7 +8,7 @@
 
 }
 .messages{
-  @apply  min-w-full  min-h-screen md:border-r-2 border-r-slate-300
+  @apply  min-w-full  min-h-screen
     flex flex-col justify-start items-center
     md:max-w-[600px]
     lg:min-w-[300px]  lg:max-w-[320px]
@@ -59,7 +59,7 @@ app-nav{
 }
 .searchrecentmessage{
   @apply min-w-full min-h-screen bg-slate-100 text-slate-600 text-sm text-center fixed z-10 pt-[130px]
-  lg:max-w-[310px] lg:min-w-0 border-r-2 border-r-slate-300
+  lg:max-w-[310px] lg:min-w-0
 }
 
 

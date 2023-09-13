@@ -3,7 +3,7 @@
 
 }
 .notificationsmain{
-  @apply w-full lg:min-w-[600px]  flex flex-col justify-start items-center
+  @apply w-full lg:min-w-[600px]  flex flex-col justify-start items-center border-r-2 border-slate-300
 }
 
 .tab{
@@ -13,7 +13,7 @@
 }
 
 .terendingsidepanel{
-  @apply hidden w-full  flex-grow-0 min-h-screen max-h-screen overflow-scroll bg-slate-200 lg:flex flex-col justify-start items-center relative
+  @apply hidden w-full  flex-grow-0 min-h-screen max-h-screen overflow-scroll bg-slate-100 lg:flex flex-col justify-start items-center relative
 }
 
 .explorecontainer{
