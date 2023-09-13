@@ -70,7 +70,7 @@
 @apply shadow-sm shadow-black/30
 }
 .searchbar{
-  @apply w-fit min-h-[30px] rounded-full flex justify-center items-center relative md:min-w-[500px] md:mx-auto ;
+  @apply w-fit min-h-[30px] rounded-full flex justify-center items-center relative md:min-w-[500px] md:max-w-[550px] md:mx-auto sm:min-w-[380px] ;
   input{
     @apply w-full rounded-full bg-[#ececec] pl-10 min-h-[30px] min-w-[60%] font-light py-1;
    //color: #ececec

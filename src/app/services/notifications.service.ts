@@ -35,5 +35,12 @@ export class NotificationsService {
     }
 
   ]
+
+  whotofollow:{handle:string,name:string}[]=[
+    {handle:'@KRAkenya',name:'Kra Kenya'},
+    {handle:'@ElonMask',name:'elon mask'},
+    {handle:'@AjneDoe',name:'Jane doe'},
+    {handle:'@KimChan',name:'chan kim'},
+  ]
   constructor() { }
 }

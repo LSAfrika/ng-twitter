@@ -42,9 +42,28 @@
   </div>
 
   <div class="whotofollow">
-    <h1>Who to Follow</h1>
-
+    <h1 class="mr-auto font-semibold text-xl pt-[15px] pl-[20px]">Who to follow</h1>
+<div *ngFor="let wtfollow of notifiservice.whotofollow" class="follow">
+  <div class="avatarfollow"></div>
+  <div class="body">
+    <div class="namefollow">{{wtfollow.name}}</div>
+    <div class="handlefollow">{{wtfollow.handle}}</div>
   </div>
+  <button class="followbtn">Follow</button>
+</div>
+
+<div class="footerfollow">
+  <span>Terms of Service</span>
+  <span>Privacy Policy</span>
+  <span>Cookie Policy</span>
+  <span>Accesibility</span>
+  <span>Ads info</span>
+  <span>More</span>
+  <span> &copy; 2023 X Corp.</span>
+</div>
+  </div>
+
+
 </div>
 
 <div *ngIf="UIS.openrecentsearch==true" class="recentsearch">

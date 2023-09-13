@@ -1,9 +1,13 @@
 
 .explorecontainer{
-  @apply xl:min-w-[900px] flex justify-start items-start  bg-blue-500
+  @apply xl:min-w-[900px] flex justify-start items-start  bg-slate-100  lg:max-w-[600px]
 }
 .explore{
-  @apply px-1 flex flex-col justify-start xl:max-w-[600px]   md:min-w-[640px] sm:min-w-[430px] w-full
+  @apply px-1 flex flex-col justify-start
+  w-full
+  sm:min-w-[430px]
+  md:min-w-[640px]
+  lg:max-w-[550px]  lg:min-w-[500px]
 }
 .title{
   @apply font-bold text-lg text-black mb-5 pl-[10px]
@@ -46,7 +50,35 @@
 
 
 .whotofollow{
-  @apply hidden xl:min-w-[350px] min-h-screen bg-teal-400 xl:flex mx-auto flex-col justify-start gap-2 px-2 items-start
+  @apply hidden  lg:min-w-[calc(100vw-720px)] xl:min-w-[calc(100vw-950px)] 2xl:min-w-[calc(100vw-1050px)] min-h-screen bg-slate-100 lg:flex  flex-col justify-start gap-2  items-start fixed z-50 top-0
+  right-0
+}
+.follow{
+  @apply my-1 gap-1 cursor-pointer 2xl:mx-0 2xl:mr-auto 2xl:ml-3  flex mx-auto min-h-[70px]  bg-slate-100 justify-between items-center min-w-[290px]  w-[calc(100vw-750px)] max-w-[320px];
+  .avatarfollow{
+    @apply w-[40px] h-[40px] bg-cyan-500 rounded-full
+  }
+  .body{
+@apply  flex-grow min-h-[70px] flex flex-col justify-center items-start pl-3 gap-0 w-fit;
+.namefollow{
+  @apply text-[15px] font-bold
+
+}
+.handlefollow{
+@apply text-slate-600 font-normal text-[15px]
+}
+  }
+  .followbtn{
+    @apply min-w-[80px] px-2 py-1 rounded-full bg-slate-900 text-white
+  }
+}
+
+.footerfollow{
+  @apply w-full max-w-[350px] px-4 min-h-[fit]  mx-auto flex justify-start items-start flex-wrap gap-x-3
+  text-slate-500 text-[13px] 2xl:mx-0 2xl:mr-auto 2xl:ml-3;
+  span{
+    @apply hover:underline cursor-pointer
+  }
 }
 
 .searchitem{
@@ -80,4 +112,7 @@
       @apply min-w-[90%] rounded-full bg-slate-100 border-2 border-slate-200 min-h-[40px]
      }
   }
+}
+app-nav{
+  @apply bg-red-400
 }
