@@ -1,6 +1,6 @@
 .nav{
     @apply w-full   flex justify-start  items-center flex-col bg-slate-600 fixed top-0 z-[100]
-    md:max-w-[640px]
+    md:max-w-[640px] sm:max-w-[420px]
 
 
     xl:min-w-[590px]
@@ -19,7 +19,7 @@
 @apply  md:ml-[120px] lg:ml-0
 }
 .navnotifcationswidth{
-  @apply  lg:max-w-[600px]
+  @apply  lg:max-w-[600px] 2xl:ml-[400px]
 }
 .navmessageswidth{
   @apply  lg:max-w-[320px]

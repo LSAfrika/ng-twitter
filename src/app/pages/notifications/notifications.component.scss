@@ -3,7 +3,7 @@
 
 }
 .notificationsmain{
-  @apply w-full min-w-[600px]
+  @apply w-full lg:min-w-[600px] 2xl:ml-[400px] flex flex-col justify-start items-center bg-red-400
 }
 
 .tab{
@@ -13,11 +13,12 @@
 }
 
 .terendingsidepanel{
-  @apply w-full  flex-grow-0 min-h-screen max-h-screen overflow-scroll bg-pink-600 flex flex-col justify-start items-center relative
+  @apply hidden w-full  flex-grow-0 min-h-screen max-h-screen overflow-scroll bg-slate-200 lg:flex flex-col justify-start items-center relative
 }
 
 .explorecontainer{
-  @apply w-full max-w-[350px] bg-red-500 sticky top-0
+  @apply w-[calc(100vw-725px)] max-w-[600px] xl:w-[calc(100vw-950px)] bg-slate-100 fixed max-h-screen top-0 mx-auto overflow-y-scroll
+  2xl:max-w-[400px] 2xl:ml-[calc(100vw-1000px)] scrollbar-none
 }
 .mentions{
    @apply px-0
@@ -31,14 +32,14 @@
   @apply text-[28px] text-slate-800
 }
 .verifiedexplanation{
-  @apply w-full px-5 text-slate-600 text-[15px] pt-5 px-8;
+  @apply w-full  text-slate-600 text-[15px] pt-5 px-8;
 a{
 @apply text-black font-semibold underline cursor-pointer
 }
 }
 
 app-tweet{
-  @apply min-w-[350px] bg-white mt-2 w-full lg:max-w-[590px]
+  @apply min-w-[350px] bg-white mt-2 w-full lg:max-w-[590px]  sm:mr-auto
 }
 
 
@@ -46,7 +47,7 @@ app-tweet{
   @apply min-w-[270px]  flex-grow
 }
 .notificationsearch{
-  @apply w-full max-w-[inherit] min-h-[50px] bg-slate-400 flex justify-center items-center px-2 relative;
+  @apply w-full max-w-[inherit] min-h-[50px] bg-slate-100 flex justify-center items-center px-2 sticky top-0 z-50;
   input{
     @apply w-[96%] rounded-full p-1 pl-[30px] text-sm  h-[inherit] bg-slate-200
   }
