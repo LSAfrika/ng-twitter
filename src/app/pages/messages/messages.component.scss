@@ -12,10 +12,11 @@
     flex flex-col justify-start items-center
     md:max-w-[600px]
     lg:min-w-[300px]  lg:max-w-[320px]
-    2xl:min-w-[420px] 2xl:max-w-[420px]
+    xl:min-w-[380px]  xl:max-w-[390px]
+    2xl:min-w-[400px] 2xl:max-w-[420px]
 }
 .viewmessage{
-  @apply hidden   bg-slate-300
+  @apply hidden   bg-slate-100/0
 
    min-h-screen  items-start flex-col
 min-w-full
@@ -27,15 +28,16 @@ min-w-full
    2xl:max-w-[555px] ;
 
   .containernewmsg{
-    @apply max-w-[350px] min-h-fit flex flex-col justify-start items-start gap-5 bg-teal-200 ml-10;
+    @apply max-w-[400px] min-h-fit flex flex-col justify-start items-start gap-5 ml-10 2xl:ml-40;
     .selectmsgtitle{
-      @apply text-3xl font-semibold text-slate-950
+      @apply text-[32px] font-semibold text-slate-950
     }
     .selectmsgsubtitle{
-      @apply text-sm text-slate-500 font-light
+      @apply text-[15px] text-slate-500 font-light
     }
     .newmessagebutton{
-      @apply min-w-[200px] p-4 rounded-full bg-[#1d9bf0] text-lg font-semibold text-white
+      @apply min-w-[170px] flex justify-center items-center p-4 rounded-full bg-[#1d9bf0] text-lg font-semibold text-white max-h-[50px] hover:bg-[#0d8ce1];
+
     }
   }
 }

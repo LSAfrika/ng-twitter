@@ -3,7 +3,7 @@
 
 }
 .notificationsmain{
-  @apply w-full lg:min-w-[600px] 2xl:ml-[400px] flex flex-col justify-start items-center bg-red-400
+  @apply w-full lg:min-w-[600px]  flex flex-col justify-start items-center
 }
 
 .tab{
@@ -18,7 +18,7 @@
 
 .explorecontainer{
   @apply w-[calc(100vw-725px)] max-w-[600px] xl:w-[calc(100vw-950px)] bg-slate-100 fixed max-h-screen top-0 mx-auto overflow-y-scroll
-  2xl:max-w-[400px] 2xl:ml-[calc(100vw-1000px)] scrollbar-none
+  2xl:max-w-[400px]  scrollbar-none
 }
 .mentions{
    @apply px-0

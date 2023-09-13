@@ -31,9 +31,9 @@ max-h-screen
 
    sm:max-w-[439px]
    lg:max-w-[calc(100vw-110px)]
-   2xl:max-w-[1000px]
-   2xl:mr-auto
-2xl:ml-0
+   2xl:min-w-[1000px]
+  2xl:w-[990px]
+2xl:ml-[400px]
    z-[80]
 }
 

@@ -1,12 +1,12 @@
 
 <div class="nav"  [ngClass]="{
-  messagespaddingleft: UIS.currentpage=='messages',
+  'messagespaddingleft dividermessages': UIS.currentpage=='messages',
 navnotifcationswidth:UIS.currentpage=='notifications',
 navmessageswidth: UIS.currentpage=='messages'
 
 }">
 
-    <div class="divider"   >
+    <div class="divider"[ngClass]="{ dividermessages: UIS.currentpage=='messages',}"   >
         <div class="avatar">
       <img src="../../../assets/profile1.jpg" alt="">
 
