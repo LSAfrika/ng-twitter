@@ -8,6 +8,7 @@ import { MobilenavComponent } from '../../components/mobilenav/mobilenav.compone
 import { MorepopoverComponent } from '../../components/morepopover/morepopover.component';
 import { FabComponent } from '../../components/fab/fab.component';
 import { ChatComponent } from '../../components/chat/chat.component';
+import { RightpanelComponent } from '../../components/rightpanel/rightpanel.component';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { ChatComponent } from '../../components/chat/chat.component';
     TweetComponent,
     SidenavComponent,
     SendtweetComponent,
-    MobilenavComponent,MorepopoverComponent,FabComponent, ChatComponent
+    MobilenavComponent,MorepopoverComponent,FabComponent, ChatComponent, RightpanelComponent
 
   ],
   imports: [
@@ -27,7 +28,7 @@ import { ChatComponent } from '../../components/chat/chat.component';
     TweetComponent,
     SendtweetComponent,
     MobilenavComponent,MorepopoverComponent,FabComponent,
-    ChatComponent
+    ChatComponent,RightpanelComponent
 
   ]
 })

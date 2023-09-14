@@ -32,7 +32,9 @@
 .navmessageswidth{
   @apply  lg:max-w-[320px]
 }
-
+.navhomewidth{
+  @apply  lg:max-w-[600px] w-[600px]
+}
 .dividernotifcations{
   @apply justify-evenly text-slate-500 gap-0
 }
@@ -50,7 +52,7 @@
 }
 
 .logo{
-    @apply w-[30px] h-[30px] rounded-full  overflow-hidden bg-cover  absolute left-[45%] sm:hidden
+    @apply w-[25px] h-[55px] rounded-full  overflow-hidden bg-cover  absolute left-[46%] sm:hidden top-[14px]
 }
 .cursor{
     @apply cursor-pointer

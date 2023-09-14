@@ -1,9 +1,12 @@
-<div class="tweetcontainer">
+<div class="tweetcontainer" [ngClass]="{tweetcontainerhome: UIS.currentpage=='home'}">
     <div class="avatrsection">
 
         <div class="avatar"></div>
     </div>
+    <ng-container *ngIf="UIS.currentpage=='notifications'" >
     <div class="biosection">
+
+
         <div class="tweeterhandle">{{tweetdata.name}} <span class="font-light text-slate-800">@{{tweetdata.handle}}</span></div>
 
         <div class="dateposted">{{tweetdata.timeposted |date:'MMMM d'}}</div>
@@ -13,14 +16,38 @@
             <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
         </div>
 
-
-
-
-        <div *ngIf="UIS.currentpage=='notifications'" class="replyingto">
+        <div  class="replyingto">
           <span class="mr-2 font-light text-slate-600">Replying to</span>
-           <span class="handle">{{tweetdata.replyingtohandle}}</span></div>
-    </div>
-    <div class="tweetbody">{{tweetdata.tweetreply}}</div>
+           <span class="handle">{{tweetdata.replyingtohandle}}</span>
+          </div>
+
+        </div>
+        <div class="tweetbody">{{tweetdata.tweetreply}}</div>
+      </ng-container>
+
+      <ng-container *ngIf="UIS.currentpage=='home'" >
+        <div class="biosection">
+
+
+            <div class="tweeterhandle">{{tweet.name}} <span class="font-light text-slate-800">@{{tweet.handle}}</span></div>
+
+            <div class="dateposted">{{tweet.timeposted |date:'MMMM d'}}</div>
+            <div class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1);">
+                <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+            </div>
+
+            <!-- <div  class="replyingto">
+              <span class="mr-2 font-light text-slate-600">Replying to</span>
+               <span class="handle">{{tweet.replyingtohandle}}</span>
+              </div> -->
+
+            </div>
+            <div class="tweetbody">{{tweet.tweet}}</div>
+          </ng-container>
+
+
     <div class="tweetstats">
 
         <div class="statssection">

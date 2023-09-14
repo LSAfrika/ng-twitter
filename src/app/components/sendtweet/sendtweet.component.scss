@@ -1,5 +1,5 @@
 .body{
-  @apply w-full flex justify-start
+  @apply w-full flex justify-start md:max-w-[600px]
 }
 
 .avatar{
@@ -10,9 +10,9 @@
 }
 
 .tweetsection{
-  @apply flex-grow gap-2 p-2 box-border  flex flex-col justify-start items-center;
+  @apply flex-grow gap-2 p-2 box-border  flex flex-col justify-start items-center ;
   .texttweet{
-    @apply w-full min-h-[70px] text-slate-800 outline-none  pl-2 text-lg
+    @apply w-full min-h-[70px] text-slate-500  outline-none  pl-2 text-[20px] pt-2 max-h-[100px] resize-none
   }
 
   .tweetaddon{

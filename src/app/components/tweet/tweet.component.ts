@@ -1,6 +1,6 @@
 import { UiService } from './../../service/ui.service';
 import { Component, inject, Input } from '@angular/core';
-import { tweetreply } from 'src/app/models/tweet.interface';
+import { tweet, tweetreply } from 'src/app/models/tweet.interface';
 
 @Component({
   selector: 'app-tweet',
@@ -11,6 +11,17 @@ export class TweetComponent {
 
 public UIS=inject(UiService)
   @Input()tweetdata!:tweetreply;
+  @Input()tweet:tweet={
+    name:'',
+    handle:'',
+   replycount:0,
+   repostcount:0,
+   viewcount:0,
+   likecount:0,
+    timeposted:1608977877,
+    tweet:``
+
+  };
   tweetvalue:string=''
 constructor(){
   // console.log('tweet input',this.tweetdata);

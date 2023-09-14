@@ -7,7 +7,7 @@ export interface tweet {
   repostcount:number
   viewcount:number
   likecount:number
-  tweetimage:string
+  tweetimage?:string
 }
 
 

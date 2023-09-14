@@ -1,0 +1,70 @@
+.terendingsidepanel{
+  @apply hidden w-full   min-h-screen max-h-screen overflow-scroll scrollbar-none bg-slate-100 lg:flex flex-col justify-start items-center relative
+}
+
+.explorecontainer{
+  @apply w-[calc(100vw-725px)] max-w-[600px] bg-slate-100 fixed max-h-screen top-0 mx-auto overflow-y-scroll  mr-auto scrollbar-none
+  lg:ml-[calc(100vw-725px)]
+  xl:w-[calc(100vw-950px)] xl:ml-[calc(100vw-930px)]
+  2xl:max-w-[350px]   2xl:ml-[calc(100vw-1030px)]
+}
+
+.explore{
+  @apply min-w-[270px]  flex-grow
+}
+.notificationsearch{
+  @apply w-full max-w-[inherit] min-h-[50px] bg-slate-100 flex justify-center items-center px-2 sticky top-0 z-50;
+  input{
+    @apply w-[96%] rounded-full p-1 pl-[30px] text-sm  h-[inherit] bg-slate-200
+  }
+  .searchicon{
+    @apply absolute  w-[25px] h-[25px]   flex justify-center items-center pl-1 left-4
+  }
+
+  .recentserachtab{
+    @apply absolute w-[95%] min-h-[100px] z-30 shadow-md shadow-black/40 -bottom-[100px] bg-slate-100 rounded-lg
+  }
+}
+.premium{
+  @apply w-full min-h-[100px]  flex flex-col justify-start items-start gap-2;
+  h1{
+    @apply text-xl font-extrabold
+  }
+  p{
+@apply text-[15px] font-bold
+  }
+  button{
+    @apply min-w-[110px] px-2 py-2 rounded-full bg-slate-950 text-white text-[15px] font-bold
+  }
+}
+
+.title{
+  @apply font-bold text-lg text-black mb-5 pl-[10px]
+}
+.firsttitle{
+  @apply pt-[60px]
+}
+
+.trending{
+  @apply min-w-full min-h-[50px]  flex justify-start items-start flex-col relative my-2 px-[10px] cursor-pointer ;
+  .menu{
+@apply absolute top-0 right-2 w-[30px] h-[30px] flex justify-center items-center  hover:rounded-full hover:bg-[#82cdff37]
+  }
+
+  .country{
+    @apply font-light text-sm text-slate-600
+  }
+  .topic{
+    @apply font-semibold text-[15px] text-black
+  }
+  .posts{
+      @apply font-light text-sm text-slate-600
+  }
+}
+
+.seemore{
+  @apply min-w-full min-h-[20px] block font-light pl-2 text-left text-[#1d9bf0] my-[20px]
+}
+.seemoreend{
+@apply mb-[100px]
+}

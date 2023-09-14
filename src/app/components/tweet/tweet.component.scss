@@ -2,7 +2,9 @@
     @apply w-full   relative min-h-[150px] h-fit  md:min-h-[150px]
     lg:max-w-[600px] lg:min-h-[140px]
 }
-
+.tweetcontainerhome{
+  @apply min-h-[125px]
+}
 .avatrsection{
 @apply absolute min-w-[65px]
 top-0 left-0 z-10 flex justify-start items-center flex-col ;
