@@ -33,7 +33,7 @@
   @apply  lg:max-w-[320px]
 }
 .navhomewidth{
-  @apply  lg:max-w-[600px] w-[600px]
+  @apply  lg:max-w-[600px] md:w-[600px]
 }
 .dividernotifcations{
   @apply justify-evenly text-slate-500 gap-0
@@ -98,4 +98,33 @@
 }
 .backfromrecentsearchtab{
   @apply w-[30px] h-[30px] bg-slate-100 absolute ml-3 flex justify-center items-center cursor-pointer
+}
+
+.listsnav{
+  @apply w-full min-h-[60px] h-[inherit] bg-white fixed flex justify-between px-1 gap-2 items-center
+  sm:w-[calc(100vw-70px)]
+  md:w-[calc(100vw-120px)]
+  lg:max-w-[600px] lg:ml-[240px]
+  xl:ml-[10px]
+
+  ;
+  .backbutton{
+    @apply w-[34px] h-[34px]  flex justify-center items-center
+  }
+  .searchbox{
+    @apply relative flex-grow  flex justify-center items-center  max-w-[400px];
+    input{
+      @apply bg-slate-100 rounded-full  border-none min-h-[30px] w-[80%] pl-10
+    }
+    .listsearchicon{
+      @apply absolute  left-[50px] w-[20px] h-[20px]
+    }
+  }
+  .newlist{
+    @apply hidden sm:flex justify-center items-center w-[34px] h-[34px]
+  }
+  .menu{
+    @apply w-[34px] h-[34px] flex justify-center items-center
+  }
+
 }

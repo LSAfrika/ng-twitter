@@ -31,4 +31,10 @@ export class NavComponent {
 
   }
 
+  ngOnInit(){
+    // this.UIS.currentpage='lists'
+    console.log('current url route: ',this.UIS.currentpage);
+
+  }
+
 }

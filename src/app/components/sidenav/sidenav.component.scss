@@ -19,7 +19,7 @@
 .svgeffect{
   @apply w-[45px] h-[45px] xl:min-w-[150px] xl:w-fit rounded-full
     flex items-center justify-center hover:bg-slate-400/40 cursor-pointer
-    xl:justify-start xl:gap-5 xl:px-2 xl:text-lg  relative
+    xl:justify-start xl:gap-5 xl:px-2 xl:text-[20px]  relative
 }
 
   svg{

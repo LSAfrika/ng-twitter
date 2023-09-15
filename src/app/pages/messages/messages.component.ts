@@ -19,16 +19,20 @@ export class MessagesComponent {
     this.UIS.selectedmenunavigationmethod(3)
     this.getScreenWidth=window.innerWidth
     this.getScreenHeight=window.innerHeight
-    console.log('current width: ',this.getScreenWidth);
-    
+    // console.log('current width: ',this.getScreenWidth);
+    this.UIS.currentpage='messages'
+
+    console.log('messages route',this.UIS.currentpage);
+
+
   }
 
-  
-
-  
 
 
-    
+
+
+
+
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     this.getScreenWidth = window.innerWidth;

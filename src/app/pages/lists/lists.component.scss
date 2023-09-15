@@ -1,0 +1,47 @@
+.list{
+  @apply w-full h-[50vh]  mx-auto mt-[60px] px-2 flex justify-start items-center  flex-col
+}
+.discover{
+  @apply text-slate-950 mr-auto font-extrabold text-[20px] py-2
+}
+.dlist{
+  @apply w-full min-h-[50px] bg-pink-600 flex justify-between items-center p-1;
+  .avatar{
+@apply w-[50px] h-[50px] bg-purple-600 rounded-md bg-cover overflow-hidden
+  }
+  .bio{
+    @apply flex-grow flex flex-col justify-start items-start max-w-[350px] bg-teal-500 min-h-[50px];
+    .title{
+@apply text-sm text-slate-800;
+.name{
+  @apply text-slate-950 text-base font-medium
+}
+
+    }
+    .following{
+@apply bg-blue-500 relative flex flex-row justify-start items-center w-full;
+.iconcontainer{
+@apply bg-lime-500 relative min-w-[60px] min-h-[20px];
+  .icon{
+    @apply w-[20px] h-[20px] rounded-full bg-red-500 absolute z-50 left-1
+
+  }
+  .i2{
+  @apply bg-purple-700 z-40 left-[15px]
+  }
+  .i3{
+  @apply bg-cyan-700 z-30 left-[25px]
+
+
+  }
+}
+.currentfollowing{
+  @apply flex-grow bg-red-500 min-h-[20px] truncate max-w-[200px] text-sm text-slate-700 align-text-bottom
+}
+
+    }
+  }
+  .add{
+    @apply w-10 h-10 rounded-full bg-slate-950 justify-center items-center flex
+  }
+}

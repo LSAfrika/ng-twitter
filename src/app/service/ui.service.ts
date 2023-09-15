@@ -25,9 +25,21 @@ public activenavmenu=0
 
 constructor(private router:Router){}
 
+
 switchnav(input:number,route:string){
+  this.currentpage=route
+  console.log('current route:',route);
+
   this.selectednavigation=input
-  this.router.navigateByUrl(`${route}`)
+  if(route!=='lists') {
+
+    this.router.navigateByUrl(`${route}`)
+  }
+  if(route=='lists') {
+  // this.currentpage=route
+
+    this.router.navigateByUrl(`LS_Afrika/${route}`)
+  }
 
 }
 

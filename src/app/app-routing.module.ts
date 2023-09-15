@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'explore', loadChildren: () => import('./pages/explore/explore.module').then(m => m.ExploreModule) },
   { path: 'notifications', loadChildren: () => import('./pages/notifications/notifications.module').then(m => m.NotificationsModule) },
   { path: 'messages', loadChildren: () => import('./pages/messages/messages.module').then(m => m.MessagesModule) },
-  { path: 'lists', loadChildren: () => import('./pages/lists/lists.module').then(m => m.ListsModule) },
+  { path: ':userid/lists', loadChildren: () => import('./pages/lists/lists.module').then(m => m.ListsModule) },
   { path: 'communities', loadChildren: () => import('./pages/communities/communities.module').then(m => m.CommunitiesModule) },
   { path: 'verified-choose', loadChildren: () => import('./pages/verified-choose/verified-choose.module').then(m => m.VerifiedChooseModule) },
   { path: 'compose', loadChildren: () => import('./pages/compose/compose.module').then(m => m.ComposeModule) },
