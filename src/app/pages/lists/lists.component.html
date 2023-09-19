@@ -1,11 +1,13 @@
 <app-nav></app-nav>
 <div class="list">
   <div class="discover">Discover new Lists</div>
-  <div class="dlist">
-    <div class="avatar"></div>
+  <div *ngFor="let list of Lists.lists" class="discoverylists">
+    <div class="avatar">
+      <img src="../../../assets/pic4.jpg" alt="">
+    </div>
 <div class="bio">
 <div class="title">
-  <span class="name">Indie</span> . <span class="count">150 members</span>
+  <span class="name">{{list.name}}</span> . <span class="count">{{list.members}} members</span>
 </div>
 <div class="following">
   <div class="iconcontainer">
@@ -14,7 +16,7 @@
     <div class="icon i2"></div>
     <div class="icon i3"></div>
   </div>
-  <span class="currentfollowing">9 floowers including @LSAfrika199</span>
+  <span class="currentfollowing">{{list.mutualfollowers}} folowers including @{{list.higlightedfollower}}</span>
 </div>
 
 
@@ -26,4 +28,14 @@
 
 
   </div>
+
+  <div class="text-[#1d9bf0] mr-auto ml-2 my-4">Show more</div>
+  <div class="discover ">Your Lists</div>
+
+  <div class="nolists">You have not created or followed any Lists.When you do the will show up here</div>
+
 </div>
+<div class=" trendingforyou">
+  <app-rightpanel></app-rightpanel>
+</div>
+

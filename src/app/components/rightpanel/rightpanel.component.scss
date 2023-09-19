@@ -1,5 +1,7 @@
 .terendingsidepanel{
-  @apply hidden w-full   min-h-screen max-h-screen overflow-scroll scrollbar-none bg-slate-100 lg:flex flex-col justify-start items-center relative
+  @apply hidden w-full   min-h-screen max-h-screen overflow-scroll scrollbar-none bg-slate-100 lg:flex
+  flex-col justify-start items-center relative
+  lg:max-w-[300px]
 }
 
 .explorecontainer{
@@ -7,6 +9,9 @@
   lg:ml-[calc(100vw-725px)]
   xl:w-[calc(100vw-950px)] xl:ml-[calc(100vw-930px)]
   2xl:max-w-[350px]   2xl:ml-[calc(100vw-1030px)]
+}
+.explorecontainerlglists{
+  @apply lg:ml-0
 }
 
 .explore{

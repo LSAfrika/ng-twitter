@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Lists } from '../models/lists.interface';
 import { trending } from '../models/trending.interface';
 
 @Injectable({
@@ -33,6 +34,28 @@ export class NotificationsService {
       topic: '#bubagirl',
       postscount: 9820
     }
+
+  ]
+
+  lists:Lists[]=[
+{
+  name: 'indie Hub',
+  members: 256,
+  mutualfollowers: 65,
+  higlightedfollower:'LSA frika@LSAfrika'
+},
+{
+  name: 'Kenya Moja',
+  members: 2500,
+  mutualfollowers: 15,
+  higlightedfollower:'elon@ElonMask'
+},
+{
+  name: 'Footbal 254',
+  members: 1000,
+  mutualfollowers: 23,
+  higlightedfollower:'min@Min_jii'
+},
 
   ]
 

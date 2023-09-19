@@ -1,27 +1,29 @@
 .list{
   @apply w-full h-[50vh]  mx-auto mt-[60px] px-2 flex justify-start items-center  flex-col
+   md:max-w-[650px]
+    lg:mx-0 lg:max-w-[580px]
 }
 .discover{
   @apply text-slate-950 mr-auto font-extrabold text-[20px] py-2
 }
-.dlist{
-  @apply w-full min-h-[50px] bg-pink-600 flex justify-between items-center p-1;
+.discoverylists{
+  @apply w-full min-h-[50px]  flex justify-between items-center p-1 my-2;
   .avatar{
-@apply w-[50px] h-[50px] bg-purple-600 rounded-md bg-cover overflow-hidden
+@apply w-[50px] h-[50px] bg-slate-600 rounded-md bg-cover overflow-hidden
   }
   .bio{
-    @apply flex-grow flex flex-col justify-start items-start max-w-[350px] bg-teal-500 min-h-[50px];
+    @apply flex-grow flex flex-col justify-start items-start max-w-[350px]  min-h-[50px];
     .title{
-@apply text-sm text-slate-800;
+@apply text-sm text-slate-800 ml-2;
 .name{
   @apply text-slate-950 text-base font-medium
 }
 
     }
     .following{
-@apply bg-blue-500 relative flex flex-row justify-start items-center w-full;
+@apply  relative flex flex-row justify-start items-center w-full;
 .iconcontainer{
-@apply bg-lime-500 relative min-w-[60px] min-h-[20px];
+@apply relative min-w-[60px] min-h-[20px];
   .icon{
     @apply w-[20px] h-[20px] rounded-full bg-red-500 absolute z-50 left-1
 
@@ -36,12 +38,27 @@
   }
 }
 .currentfollowing{
-  @apply flex-grow bg-red-500 min-h-[20px] truncate max-w-[200px] text-sm text-slate-700 align-text-bottom
+  @apply flex-grow  min-h-[20px] truncate max-w-[200px] text-sm text-slate-700 align-text-bottom
 }
 
     }
   }
   .add{
-    @apply w-10 h-10 rounded-full bg-slate-950 justify-center items-center flex
+    @apply w-10 h-10 rounded-full bg-slate-950 justify-center items-center flex cursor-pointer
+  }
+}
+
+
+.nolists{
+  @apply w-full min-h-[50px]  text-slate-700 font-light
+}
+
+.trendingforyou{
+  @apply hidden lg:block w-[calc(100vw-710px)] fixed top-0 left-[calc(100vw-290px)] min-h-screen
+  xl:left-[calc(100vw-380px)]
+  xl:w-[calc(100vw-900px)]
+  ;
+  app-rightpanel{
+    @apply mr-auto
   }
 }

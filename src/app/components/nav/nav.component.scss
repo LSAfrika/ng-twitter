@@ -103,7 +103,7 @@
 .listsnav{
   @apply w-full min-h-[60px] h-[inherit] bg-white fixed flex justify-between px-1 gap-2 items-center
   sm:w-[calc(100vw-70px)]
-  md:w-[calc(100vw-120px)]
+  md:w-[calc(100vw-120px)] md:max-w-[650px]
   lg:max-w-[600px] lg:ml-[240px]
   xl:ml-[10px]
 
