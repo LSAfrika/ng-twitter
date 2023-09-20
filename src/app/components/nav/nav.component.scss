@@ -128,3 +128,19 @@
   }
 
 }
+.communitiesnav{
+  @apply w-full min-h-[60px] h-[inherit] bg-white fixed flex justify-between px-1 gap-2 items-center
+  sm:max-w-[430px]
+  md:max-w-[650px]
+  lg:max-w-[600px] lg:ml-[240px]
+  xl:ml-[10px]
+
+  ;
+  .backbutton{
+    @apply w-[34px] h-[34px]  flex justify-center items-center
+  }
+
+  .menu{
+    @apply w-[34px] h-[34px] flex justify-center items-center
+  }
+}

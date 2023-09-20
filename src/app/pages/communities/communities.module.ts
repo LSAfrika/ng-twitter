@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CommunitiesRoutingModule } from './communities-routing.module';
 import { CommunitiesComponent } from './communities.component';
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,7 @@ import { CommunitiesComponent } from './communities.component';
   ],
   imports: [
     CommonModule,
-    CommunitiesRoutingModule
+    CommunitiesRoutingModule,SharedModule
   ]
 })
 export class CommunitiesModule { }

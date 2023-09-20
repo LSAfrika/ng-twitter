@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UiService } from 'src/app/service/ui.service';
 
 @Component({
   selector: 'app-communities',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./communities.component.scss']
 })
 export class CommunitiesComponent {
+private uis=inject(UiService)
 
+constructor(){this.uis.currentpage='communities'}
 }
