@@ -44,3 +44,19 @@ app-mobilenav{
 app-fab{
   @apply fixed bottom-[60px] right-[20px] z-[100] w-[56px] h-[56px]  rounded-full
 }
+
+.verified{
+  @apply fixed min-w-full
+  min-h-screen md:bg-black/30 top-0
+  z-[100] bg-slate-100 flex
+  justify-center items-center
+  ;
+  .close{
+    @apply w-7 h-7 fill-slate-900 fixed top-2 left-2 md:hidden
+  }
+
+  app-verified-choose{
+    @apply flex-grow
+  }
+}
+

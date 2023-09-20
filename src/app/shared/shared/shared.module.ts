@@ -9,6 +9,7 @@ import { MorepopoverComponent } from '../../components/morepopover/morepopover.c
 import { FabComponent } from '../../components/fab/fab.component';
 import { ChatComponent } from '../../components/chat/chat.component';
 import { RightpanelComponent } from '../../components/rightpanel/rightpanel.component';
+import { VerifiedChooseComponent } from 'src/app/pages/verified-choose/verified-choose.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { RightpanelComponent } from '../../components/rightpanel/rightpanel.comp
     TweetComponent,
     SidenavComponent,
     SendtweetComponent,
-    MobilenavComponent,MorepopoverComponent,FabComponent, ChatComponent, RightpanelComponent
+    MobilenavComponent,MorepopoverComponent,FabComponent, ChatComponent, RightpanelComponent,
+    VerifiedChooseComponent
 
   ],
   imports: [
@@ -28,7 +30,7 @@ import { RightpanelComponent } from '../../components/rightpanel/rightpanel.comp
     TweetComponent,
     SendtweetComponent,
     MobilenavComponent,MorepopoverComponent,FabComponent,
-    ChatComponent,RightpanelComponent
+    ChatComponent,RightpanelComponent,VerifiedChooseComponent
 
   ]
 })

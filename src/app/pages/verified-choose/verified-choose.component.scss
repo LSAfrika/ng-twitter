@@ -1,0 +1,36 @@
+.modal{
+  @apply flex-grow min-h-[500px]
+  rounded-lg
+  flex flex-col justify-start items-center
+  pt-5 box-border
+  bg-slate-100 w-[90%] mx-auto max-w-[400px]
+}
+.who{
+  @apply text-[31px] font-extrabold text-slate-950
+}
+.choose{
+  @apply text-[15px] font-light my-4
+}
+
+.subcontainer{
+  @apply min-h-[185px] min-w-[300px] w-full flex justify-center
+  items-center bg-red-400  gap-2 my-10;
+
+}
+.sub{
+  @apply flex-grow min-h-[150px] flex justify-center
+   items-center bg-teal-800
+}
+
+
+button{
+  @apply min-w-[295px] bg-slate-950 text-white text-lg
+  font-bold py-4 rounded-full
+}
+
+.footer{
+  @apply w-full px-2 text-[15px] font-light mt-5;
+  span{
+    @apply text-[#1d9bf0] hover:underline cursor-pointer
+  }
+}
