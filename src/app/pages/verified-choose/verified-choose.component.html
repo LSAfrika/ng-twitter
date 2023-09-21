@@ -1,9 +1,26 @@
 <div class="modal">
+  <svg (click)="UIS.closeverifiedcomponent()" class="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+
   <span class="who">Who are you?</span>
   <span class="choose">Choose the right subscription for you</span>
   <div class="subcontainer">
-    <div class="sub premium"></div>
-    <div class="sub verifiedorg"></div>
+    <div (click)="toggletrue()" class="sub "
+    [ngClass]="{highlight: UIS.outlineverfied==true}">
+      <span class="premtitle">premium</span>
+      <div class="prembody">I am an individual</div>
+      <div class="premfooter">for individual and creators</div>
+    </div>
+    <div (click)="togglefalse()" class="sub "
+    [ngClass]="{highlight: UIS.outlineverfied==false}"
+    >
+
+      <span class="premtitle">verified organization</span>
+      <div class="prembody">I am an organization</div>
+      <div class="premfooter">for busniesses, Governments
+      Agencies and non-profit
+      </div>
+
+    </div>
 
   </div>
   <button>Subscribe</button>

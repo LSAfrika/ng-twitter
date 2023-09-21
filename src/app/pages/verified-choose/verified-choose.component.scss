@@ -4,6 +4,11 @@
   flex flex-col justify-start items-center
   pt-5 box-border
   bg-slate-100 w-[90%] mx-auto max-w-[400px]
+  md:min-w-[600px] relative md:max-h-[600px]
+}
+.close{
+  @apply w-7 h-7 fill-slate-900 absolute rounded-full cursor-pointer
+  top-2 left-2 hidden md:block hover:bg-slate-300 hover:p-1
 }
 .who{
   @apply text-[31px] font-extrabold text-slate-950
@@ -13,23 +18,48 @@
 }
 
 .subcontainer{
-  @apply min-h-[185px] min-w-[300px] w-full flex justify-center
-  items-center bg-red-400  gap-2 my-10;
+  @apply min-h-[185px] min-w-[350px] w-full flex justify-center
+  items-center bg-red-400/0  gap-2 my-10
+  sm:min-w-[400px]
+  md:min-w-[600px]
+  ;
+
 
 }
 .sub{
-  @apply flex-grow min-h-[150px] flex justify-center
-   items-center bg-teal-800
+
+  @apply flex-grow min-h-[250px] max-w-[180px] cursor-pointer
+md:min-w-[205px]
+  bg-white shadow-lg shadow-black/20
+   flex justify-center items-start flex-col
+     rounded-lg px-2
+    whitespace-pre-wrap overflow-clip;
+
+   .premtitle{
+    @apply text-sm font-light
+   }
+   .prembody{
+    @apply text-lg font-bold
+   }
+   .premfooter{
+    @apply text-base font-light
+   }
+}
+.highlight{
+
+  @apply border-2 border-[#1d9bf0]
 }
 
 
 button{
   @apply min-w-[295px] bg-slate-950 text-white text-lg
-  font-bold py-4 rounded-full
+  font-bold py-4 rounded-full md:min-w-[500px]
 }
 
 .footer{
-  @apply w-full px-2 text-[15px] font-light mt-5;
+  @apply w-full px-2 text-[15px] font-light my-5 md:text-center
+  md:mb-10
+  ;
   span{
     @apply text-[#1d9bf0] hover:underline cursor-pointer
   }

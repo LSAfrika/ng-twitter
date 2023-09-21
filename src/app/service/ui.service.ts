@@ -19,7 +19,10 @@ public popover$=new BehaviorSubject(false)
 public dropdowncreator$=new BehaviorSubject(false)
 public dropdownprofessional$=new BehaviorSubject(false)
 public dropdownsettings$=new BehaviorSubject(false)
+public verified$=new BehaviorSubject(false)
+public outlineverfied=true
 public activenavmenu=0
+
   currentpage: string='';
 
 
@@ -88,4 +91,14 @@ acvtivepage(page:string){
 selectedmenunavigationmethod(select:number){
   this.selectednavigation=select
 }
+
+openverifiedcomponent(){
+  this.verified$.next(true)
+}
+
+closeverifiedcomponent(){
+  this.verified$.next(false)
+}
+
+
 }

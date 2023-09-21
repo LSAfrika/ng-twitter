@@ -52,7 +52,10 @@ app-fab{
   justify-center items-center
   ;
   .close{
-    @apply w-7 h-7 fill-slate-900 fixed top-2 left-2 md:hidden
+    @apply w-7 h-7 fill-slate-900 fixed
+    top-2 left-2 cursor-pointer
+     md:hidden
+   hover:bg-slate-300 hover:p-1
   }
 
   app-verified-choose{
