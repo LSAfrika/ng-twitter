@@ -7,9 +7,9 @@
 
 .explorecontainer{
   @apply w-[calc(100vw-725px)] max-w-[600px] bg-slate-100 relative max-h-screen top-0 mx-auto overflow-y-scroll  mr-auto scrollbar-none
-  lg:ml-[calc(100vw-725px)]
-  xl:w-[calc(100vw-950px)] xl:ml-[calc(100vw-930px)]
-  2xl:max-w-[350px]   2xl:ml-[calc(100vw-1030px)]
+  lg:max-w-[300px]
+  xl:w-[calc(100vw-950px)] xl:ml-5
+  2xl:max-w-[350px]
 }
 .explorecontainerlglists{
   @apply lg:ml-0 lg:max-w-[300px] xl:max-w-[400px]

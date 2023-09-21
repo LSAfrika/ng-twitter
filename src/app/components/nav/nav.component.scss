@@ -9,6 +9,10 @@
 
 }
 
+.navexplorelg{
+  @apply lg:max-w-[535px]
+}
+
 .divider{
     @apply w-full   h-[56px] flex justify-start  items-center  gap-2 font-semibold sticky top-0 bg-slate-100
     md:max-w-[640px]
@@ -72,13 +76,22 @@
 @apply shadow-sm shadow-black/30
 }
 .searchbar{
-  @apply w-fit min-h-[30px] rounded-full flex justify-center items-center relative md:min-w-[500px] md:max-w-[550px] md:mx-auto sm:min-w-[380px] ;
+  @apply w-full min-h-[30px]  flex justify-center items-center relative
+
+  sm:max-w-[400px] sm:ml-auto
+  md:max-w-[750px] md:mx-auto
+  lg:max-w-[395px]
+  xl:max-w-[460px]
+  ;
   input{
-    @apply w-full rounded-full bg-[#ececec] pl-10 min-h-[30px] min-w-[60%] font-light py-1;
-   //color: #ececec
+    @apply w-full rounded-full   pl-10 min-h-[30px] min-w-[60%] font-light py-1 ml-auto
+    sm:max-w-[350px]
+    md:max-w-[500px]  md:ml-0
+    ;
+   //color: #ececec bg-[#ececec]
   }
   .searchicon{
-    @apply absolute left-3 top-[6px] fill-black/60 cursor-pointer
+    @apply absolute left-3 top-[6px] fill-black/60 cursor-pointer sm:left-14 md:left-16 lg:left-2
   }
 }
 
@@ -97,7 +110,7 @@
   @apply hidden
 }
 .backfromrecentsearchtab{
-  @apply w-[30px] h-[30px] bg-slate-100 absolute ml-3 flex justify-center items-center cursor-pointer
+  @apply w-[30px] h-[30px] bg-slate-100 absolute ml-3 flex justify-center items-center cursor-pointer z-[110] sm:ml-1
 }
 
 .listsnav{

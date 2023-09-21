@@ -41,7 +41,9 @@
 }
 
 .recentsearch{
-  @apply w-full min-h-[calc(100vh-55px)] bg-white fixed z-[100] bottom-0
+  @apply w-full min-h-[calc(100vh-55px)] bg-slate-100 fixed z-[100] bottom-0 sm:max-w-[430px]
+  md:max-w-[647px]
+  lg:max-w-[550px]
 }
 .recenttitle{
   @apply w-full  min-h-fit font-[500] cursor-pointer flex justify-between px-3 items-start text-[rgb(29,155,240)] text-base
