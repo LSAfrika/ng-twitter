@@ -22,6 +22,7 @@ public dropdownsettings$=new BehaviorSubject(false)
 public verified$=new BehaviorSubject(false)
 public outlineverfied=true
 public activenavmenu=0
+public activedetailsmenu=0
 
   currentpage: string='';
 

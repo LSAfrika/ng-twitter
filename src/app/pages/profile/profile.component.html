@@ -1,1 +1,33 @@
-<p>profile works!</p>
+<app-nav></app-nav>
+<div class="container">
+<div class="coverphoto"></div>
+<div class="avatarprofilecontainer">
+<div class="avatar"></div>
+<button class="editprofilebutton">Edit profile</button>
+</div>
+<div class="profiledetails">
+<div class="name">L Studios Afrika</div>
+<div class="handle">@LSAfrika</div>
+
+<div class="date">
+  <span class="icon"></span>
+  <span class="_date">Joined April 2018</span>
+</div>
+<div class="followcontainer">
+  <span> <div class="number">56</div> following</span>
+  <span> <div class="number">25</div> followers</span>
+</div>
+
+</div>
+<div class="detailscolumn">
+  <div [ngClass]="{active: UIS.activedetailsmenu==0}" (click)="activemenu(0)">Posts</div>
+  <div [ngClass]="{active: UIS.activedetailsmenu==1}" (click)="activemenu(1)">Replies</div>
+  <div [ngClass]="{active: UIS.activedetailsmenu==2}" (click)="activemenu(2)">Highlights</div>
+  <div [ngClass]="{active: UIS.activedetailsmenu==3}" (click)="activemenu(3)">Media</div>
+  <div [ngClass]="{active: UIS.activedetailsmenu==4}" (click)="activemenu(4)">Likes</div>
+</div>
+
+<div class="posts"></div>
+
+<div class="w-full min-h-[100px] bg-red-400"></div>
+</div>
