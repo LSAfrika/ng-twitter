@@ -35,6 +35,28 @@
     @apply absolute w-[95%] min-h-[100px] z-30 shadow-md shadow-black/40 -bottom-[100px] bg-slate-100 rounded-lg
   }
 }
+
+.follow{
+  @apply my-1 gap-1 cursor-pointer   flex mx-auto min-h-[70px]  bg-slate-100 justify-between items-center min-w-[150px]  ;
+  .avatarfollow{
+    @apply w-[40px] h-[40px] bg-cyan-500 rounded-full
+  }
+  .body{
+@apply  flex-grow min-h-[70px] flex flex-col justify-center items-start pl-3 gap-0 w-fit;
+.namefollow{
+  @apply text-[15px] font-bold
+
+}
+.handlefollow{
+@apply text-slate-600 font-normal text-[15px]
+}
+  }
+  .followbtn{
+    @apply min-w-[80px] px-2 py-1 rounded-full bg-slate-900 text-white
+  }
+}
+
+
 .premium{
   @apply w-full min-h-[100px]  flex flex-col justify-start items-start gap-2;
   h1{

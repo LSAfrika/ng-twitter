@@ -20,6 +20,19 @@
 <button>Subscribe</button>
   </div>
 </ng-container>
+
+<ng-container *ngIf="UIS.currentpage=='profile' ">
+
+  <span class="text-2xl my-10 mb-20 font-semibold text-slate-950">You might like</span>
+  <div *ngFor="let wtfollow of notifiservice.whotofollow" class="follow">
+    <div class="avatarfollow"></div>
+    <div class="body">
+      <div class="namefollow">{{wtfollow.name}}</div>
+      <div class="handlefollow">{{wtfollow.handle}}</div>
+    </div>
+    <button class="followbtn">Follow</button>
+  </div>
+</ng-container>
       <div class="title firsttitle">Trending for you</div>
     <div *ngFor="let trend of notifiservice.foryou" class="trending">
 
