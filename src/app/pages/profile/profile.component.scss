@@ -9,7 +9,7 @@
   md:max-w-[600px]
 }
 .rightpanel{
-  @apply flex-grow max-w-[300px] bg-yellow-400 hidden lg:flex min-h-screen
+  @apply flex-grow max-w-[300px] bg-yellow-400 hidden lg:flex min-h-screen sticky top-0
 }
 .coverphoto{
 @apply w-full min-h-[100px]  flex justify-center items-center text-2xl font-light text-slate-200 bg-cover overflow-hidden max-h-[200px]
