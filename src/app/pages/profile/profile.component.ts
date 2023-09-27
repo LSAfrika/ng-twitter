@@ -9,6 +9,8 @@ import { UiService } from 'src/app/service/ui.service';
 export class ProfileComponent {
 public UIS=inject(UiService)
 
+constructor(){this.UIS.currentpage='profile'}
+
 activemenu(active:number){
 this.UIS.activedetailsmenu=active
 }
