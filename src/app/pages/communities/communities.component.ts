@@ -9,5 +9,5 @@ import { UiService } from 'src/app/service/ui.service';
 export class CommunitiesComponent {
 private uis=inject(UiService)
 
-constructor(){this.uis.currentpage='communities'}
+constructor(){this.uis.currentpage='communities';this.uis.selectednavigation=5}
 }

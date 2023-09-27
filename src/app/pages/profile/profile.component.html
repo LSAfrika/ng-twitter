@@ -9,7 +9,7 @@
   </div>
   <div class="avatarprofilecontainer">
   <div class="avatar">
-  <img src="../../.../../../assets/profile1.jpg" alt="">
+  <img src="../../.../../../assets/profile1.jpg" alt="avatar">
 
   </div>
   <button class="editprofilebutton">Edit profile</button>
@@ -36,9 +36,13 @@
     <div [ngClass]="{active: UIS.activedetailsmenu==4}" (click)="activemenu(4)">Likes</div>
   </div>
 
-  <div class="posts"></div>
+  <div class="posts">
+    <app-tweet [tweet]="tweet" *ngFor="let tweet of tweetservice.mytweets"></app-tweet>
 
-  <div class="w-full min-h-[100px] bg-red-400"></div>
+
+  </div>
+
+  <div class="w-full min-h-[50px] "></div>
   </div>
 
   <div class="rightpanel">

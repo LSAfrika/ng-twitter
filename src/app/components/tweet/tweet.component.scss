@@ -1,6 +1,6 @@
 .tweetcontainer{
     @apply w-full   relative min-h-[150px] h-fit  md:min-h-[150px]
-    lg:max-w-[600px] lg:min-h-[140px]
+    lg:max-w-[600px] lg:min-h-[140px] mb-3
 }
 .tweetcontainerhome{
   @apply min-h-[125px]
@@ -42,13 +42,16 @@ top-0 left-0 z-10 flex justify-start items-center flex-col ;
     }
 
 }
+.tweetimage{
+  @apply  ml-auto  my-2 max-h-[250px] bg-slate-100 w-[calc(100%-65px)] bg-cover overflow-hidden flex justify-center items-center
+}
 .tweetbody{
-    @apply w-[calc(100%-65px)] min-h-[calc(100%-70px)] max-h-[calc(100%-70px)]
-      z-20 absolute right-0  overflow-hidden px-1
+    @apply w-[calc(100%-65px)] min-h-[30px] h-fit
+      z-20  right-0  overflow-hidden px-1 ml-auto
     ;
 }
 .tweetstats{
-    @apply w-[calc(100%-65px)] min-h-[40px] h-fit   opacity-60 absolute bottom-0 right-0 box-border pt-[5px]
+    @apply w-[calc(100%-65px)] min-h-[40px] h-fit   opacity-60   box-border pt-[5px] ml-auto
     flex justify-between items-center px-[10px];
     .statssection{
         @apply w-fit flex justify-center items-center cursor-pointer

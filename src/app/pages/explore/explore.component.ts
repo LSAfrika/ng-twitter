@@ -22,6 +22,7 @@ export class ExploreComponent {
   constructor() {
     this.UIS.acvtivepage('explore')
     this.UIS.selectedmenunavigationmethod(1)
+    this.UIS.selectednavigation=1
 
     console.log(this.UIS.currentpage);
 

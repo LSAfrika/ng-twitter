@@ -12,7 +12,7 @@
   @apply flex-grow max-w-[300px] bg-yellow-400 hidden lg:flex min-h-screen
 }
 .coverphoto{
-@apply w-full min-h-[100px]  flex justify-center items-center text-2xl font-light text-slate-200 bg-cover overflow-hidden max-h-[150px]
+@apply w-full min-h-[100px]  flex justify-center items-center text-2xl font-light text-slate-200 bg-cover overflow-hidden max-h-[200px]
 
 }
 
@@ -92,9 +92,9 @@ absolute -top-8
 
 .posts{
 @apply w-full
-min-h-[200px] bg-white
-rounded-lg shadow-md shadow-black/40
-my-2
+min-h-[200px] bg-slate-100
+
+my-2 flex flex-col justify-start items-stretch gap-5
 
 
 

@@ -21,7 +21,7 @@ export class MessagesComponent {
     this.getScreenHeight=window.innerHeight
     // console.log('current width: ',this.getScreenWidth);
     this.UIS.currentpage='messages'
-
+this.UIS.selectednavigation=3
     console.log('messages route',this.UIS.currentpage);
 
 

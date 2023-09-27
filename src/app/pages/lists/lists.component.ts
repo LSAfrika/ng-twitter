@@ -10,5 +10,5 @@ import { NotificationsService } from 'src/app/services/notifications.service';
 export class ListsComponent {
 public UIS=inject(UiService)
 public Lists=inject(NotificationsService)
-constructor(){this.UIS.currentpage='lists'}
+constructor(){this.UIS.currentpage='lists';this.UIS.selectednavigation=4}
 }

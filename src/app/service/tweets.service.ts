@@ -62,7 +62,9 @@ export class TweetsService {
       timeposted:1608977877,
       tweet:`hello we will get back to the issue at hand as described
       by you
-      `
+      `,
+      tweetimage:'../../.../../../assets/pic1.jpg'
+
 
     },
     {
@@ -73,7 +75,8 @@ export class TweetsService {
       viewcount:2390,
       likecount:500,
       timeposted:1693468431,
-      tweet:`true as you stated all shall be well as per philippians 1:6 `
+      tweet:`true as you stated all shall be well as per philippians 1:6 `,
+      tweetimage:'../../.../../../assets/pic4.jpg'
 
     },
     {
@@ -96,7 +99,9 @@ export class TweetsService {
       viewcount:2390,
       likecount:500,
       timeposted:1692950031,
-      tweet:`nice coach the session was fabtastic today   `
+      tweet:`nice coach the session was fabtastic today   `,
+      tweetimage:'../../.../../../assets/pic5.jpg'
+
 
     },
     {
@@ -147,6 +152,77 @@ export class TweetsService {
       `
 
     }
+  ]
+
+  mytweets:tweet[]=[
+
+    {
+      name:'L Stuidos Afrika',
+      handle:'LSAfrika',
+      replycount:2000,
+      repostcount:1350,
+      viewcount:2390,
+      likecount:500,
+      timeposted:1693468431,
+      tweet:`true as you stated all shall be well as per philippians 1:6 `,
+      tweetimage:'../../.../../../assets/pic5.jpg'
+
+
+    },
+    {
+      name:'L Stuidos Afrika',
+      handle:'LSAfrika',
+      replycount:2000,
+      repostcount:1350,
+      viewcount:2390,
+      likecount:500,
+      timeposted:1690790031,
+      tweet:`hello we welcome you to twitter`,
+      tweetimage:'../../.../../../assets/verified.png'
+
+
+    },
+    {
+      name:'L Stuidos Afrika',
+      handle:'LSAfrika',
+      replycount:2000,
+      repostcount:1350,
+      viewcount:2390,
+      likecount:500,
+      timeposted:1692950031,
+      tweet:`nice coach the session was fabtastic today   `,
+      tweetimage:'../../.../../../assets/pic1.jpg'
+
+
+
+    },
+    {
+      name:'L Stuidos Afrika',
+      handle:'LSAfrika',
+      replycount:2000,
+      repostcount:1350,
+      viewcount:2390,
+      likecount:500,
+      timeposted:1693036431,
+      tweet:`euro 2024 is just around the corener are yoo excited
+      `
+
+    },
+    {
+      name:'L Stuidos Afrika',
+      handle:'LSAfrika',
+      replycount:1000,
+      repostcount:1750,
+      viewcount:3390,
+      likecount:5100,
+      timeposted:1693036431,
+      tweet:`new covid vaccines are here
+      `,
+      tweetimage:'../../.../../../assets/profile1.jpg'
+
+    },
+
+
   ]
   constructor() { }
 }

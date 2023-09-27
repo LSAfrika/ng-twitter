@@ -23,6 +23,7 @@ export class NotificationsComponent {
 this.UIS.tweetstats=false
     console.log('data to be sent to tweet component',this.tweetdata);
     console.log(this.UIS.currentpage);
+    this.UIS.selectednavigation=2
 
 
   }

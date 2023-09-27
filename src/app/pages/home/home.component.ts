@@ -12,7 +12,9 @@ export class HomeComponent {
   public tweetservice =inject(TweetsService)
 constructor(){
   this.UIS.acvtivepage('home')
-  this.UIS.selectedmenunavigationmethod(0)
+this.UIS.selectednavigation=0
+
+ // this.UIS.selectedmenunavigationmethod(0)
 this.UIS.tweetstats=true
 
 
