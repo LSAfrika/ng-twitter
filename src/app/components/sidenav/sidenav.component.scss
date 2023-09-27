@@ -34,7 +34,7 @@
   }
 
   .user{
-    @apply w-[50px] h-[50px] xl:min-w-[90%] xl:w-fit rounded-full flex items-center justify-center  mt-auto mb-2;
+    @apply w-[50px] h-[50px] xl:min-w-[90%] xl:w-fit xl:px-4 rounded-full flex items-center justify-center  mt-auto mb-2;
     .userpic{
       @apply w-[40px] h-[40px] bg-blue-600 rounded-full bg-cover overflow-hidden justify-center items-center flex
     }

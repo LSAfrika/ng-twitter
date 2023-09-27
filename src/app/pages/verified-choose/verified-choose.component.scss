@@ -7,7 +7,7 @@
   md:min-w-[600px] relative md:max-h-[600px]
 }
 .close{
-  @apply w-7 h-7 fill-slate-900 absolute rounded-full cursor-pointer
+  @apply w-7 h-7 fill-slate-900 absolute rounded-full cursor-pointer bg-slate-100
   top-2 left-2 hidden md:block hover:bg-slate-300 hover:p-1
 }
 .who{

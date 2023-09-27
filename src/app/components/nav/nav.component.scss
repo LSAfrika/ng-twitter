@@ -167,7 +167,7 @@
 
   ;
   .backbutton{
-    @apply w-[34px] h-[34px]  flex justify-center items-center
+    @apply w-[34px] h-[34px]  flex justify-center items-center lg:ml-[30px] xl:ml-[15px]
   }
 
   .menu{

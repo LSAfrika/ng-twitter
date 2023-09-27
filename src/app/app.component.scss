@@ -55,7 +55,7 @@ app-fab{
   .close{
     @apply w-7 h-7 fill-slate-900 fixed
     top-2 left-2 cursor-pointer
-     md:hidden bg-blue-600
+     md:hidden
    hover:bg-slate-300 hover:p-1
   }
 
