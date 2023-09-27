@@ -20,6 +20,7 @@ public dropdowncreator$=new BehaviorSubject(false)
 public dropdownprofessional$=new BehaviorSubject(false)
 public dropdownsettings$=new BehaviorSubject(false)
 public verified$=new BehaviorSubject(false)
+public compose$=new BehaviorSubject(true)
 public outlineverfied=true
 public activenavmenu=0
 public activedetailsmenu=0
@@ -101,5 +102,12 @@ closeverifiedcomponent(){
   this.verified$.next(false)
 }
 
+opencomposepanel(){
+  this.compose$.next(true)
+}
+
+closecomposepanel(){
+  this.compose$.next(false)
+}
 
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UiService } from 'src/app/service/ui.service';
 
 @Component({
   selector: 'app-compose',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ComposeComponent {
 
+  public UIS=inject(UiService)
 }
