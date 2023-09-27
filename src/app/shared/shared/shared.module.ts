@@ -11,6 +11,7 @@ import { ChatComponent } from '../../components/chat/chat.component';
 import { RightpanelComponent } from '../../components/rightpanel/rightpanel.component';
 import { VerifiedChooseComponent } from 'src/app/pages/verified-choose/verified-choose.component';
 import { ComposetweetComponent } from '../../components/composetweet/composetweet.component';
+import { WelcomeComponent } from '../../components/welcome/welcome.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ComposetweetComponent } from '../../components/composetweet/composetwee
     SendtweetComponent,
     MobilenavComponent,MorepopoverComponent,FabComponent, ChatComponent, RightpanelComponent,
     VerifiedChooseComponent,
-    ComposetweetComponent
+    ComposetweetComponent,
+    WelcomeComponent
 
   ],
   imports: [
@@ -32,7 +34,7 @@ import { ComposetweetComponent } from '../../components/composetweet/composetwee
     TweetComponent,
     SendtweetComponent,
     MobilenavComponent,MorepopoverComponent,FabComponent,
-    ChatComponent,RightpanelComponent,VerifiedChooseComponent,ComposetweetComponent
+    ChatComponent,RightpanelComponent,VerifiedChooseComponent,ComposetweetComponent,WelcomeComponent
 
   ]
 })
