@@ -143,7 +143,7 @@
 }
 .communitiesnav{
   @apply w-full min-h-[60px] h-[inherit] bg-white fixed flex justify-between px-1 gap-2 items-center
-  sm:max-w-[430px]
+  sm:max-w-[440px]
   md:max-w-[650px]
   lg:max-w-[600px] lg:ml-[240px]
   xl:ml-[10px]
@@ -156,4 +156,24 @@
   .menu{
     @apply w-[34px] h-[34px] flex justify-center items-center
   }
+}
+
+.profilenav{
+  @apply w-full min-h-[60px] h-[inherit] bg-white fixed flex justify-between px-1 gap-2 items-center
+  sm:max-w-[440px]
+  md:max-w-[650px]
+  lg:max-w-[600px] lg:ml-[240px]
+  xl:ml-[10px]
+
+  ;
+  .backbutton{
+    @apply w-[34px] h-[34px]  flex justify-center items-center
+  }
+
+  .menu{
+    @apply w-[34px] h-[34px] flex justify-center items-center
+  }
+}
+.namecontainer{
+  @apply flex flex-col justify-start items-start gap-0 mr-auto max-h-[50px]
 }
