@@ -1,0 +1,43 @@
+
+  .composenav{
+    @apply min-w-full min-h-[50px]  justify-start items-center flex gap-3 bg-slate-100 md:px-5 md:py-4 md:rounded-t-2xl;
+   .btn{
+     @apply min-w-[70px] px-3 py-1  min-h-[30px] rounded-full font-normal text-sm
+   }
+   .draft{
+     @apply hover:bg-[#1d9cf037] text-[#1d9bf0]
+   }
+   .colorbtn{
+     @apply text-white md:hidden;
+     background-color: #1d9cf08f;
+   }
+ }
+
+ .tweet{
+   @apply w-full h-full max-h-[200px] flex flex-col justify-start   bg-slate-100 md:px-3 md:py-2 md:max-h-[300px] md:rounded-b-2xl
+ }
+ .tweetbody{
+   @apply w-full flex justify-start items-center min-h-[150px] bg-slate-100
+ }
+
+ .avatarsection{
+   @apply  min-h-[inherit] min-w-[50px] bg-slate-100 ;
+   .avatar{
+     @apply flex items-center justify-center w-10 h-10 mx-auto mt-1 mb-auto overflow-hidden bg-orange-500 bg-cover rounded-full
+   }
+ }
+
+ .innertweetbody{
+   @apply  min-h-[inherit] flex-grow  flex flex-col justify-start items-start text-[#1d9bf0] pl-5;
+   .everyone{
+    @apply flex justify-between items-center border-[1px] border-[#1d9bf0] rounded-full px-3 text-[14px] cursor-pointer
+   }
+
+   textarea{
+    @apply w-full min-h-[100px] bg-slate-100 my-3 p-2 text-xl text-slate-700 focus:outline-none
+   }
+ }
+
+ .tweetmenu,.tweeticons{
+   @apply w-full min-h-[50px] flex justify-start items-center text-[#1d9bf0] font-bold  px-4 gap-2 text-sm
+ }
