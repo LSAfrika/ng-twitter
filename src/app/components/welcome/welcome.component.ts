@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UiService } from 'src/app/service/ui.service';
 
 @Component({
   selector: 'app-welcome',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent {
+private uis=inject(UiService)
 
+closemodal(){
+  this.uis.welcome$.next(false)
+}
 }
